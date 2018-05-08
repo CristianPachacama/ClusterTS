@@ -4,13 +4,13 @@ author: "David Pachacama"
 date: "1 de mayo de 2018"
 output:
   prettydoc::html_pretty:
-    theme: cayman
+    theme: leonids
     highlight: github
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-# THEMES: cayman,tactile,architect,leonids,hpstr,cerulean
+# THEMES: cayman,tactile,architect,leonids,hpstr
 # HIGHLIGHT: github, vignette
 ```
 
