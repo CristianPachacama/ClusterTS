@@ -39,9 +39,32 @@ Brasil tiene una de los sistemas hidrológicos más complejos, diversos y extens
 ### 3. Justificación
 
 #### 3.1  Justificación Teórica 
-Ya que el problema se basa en identificar grupos de ríos cuyos Caudales se comportan de manera similar en el tiempo, se propone la utilización de el “Análisis Clúster de Series de Tiempo”, que es una técnica de agrupamiento que considera una función de “disimilitud” entre las series de tiempo (que mide que tan distintas son un par de series) y a partir de ella crea grupos de series, cada grupo contiene series de tiempo “parecidas”, al elegir adecuadamente la función de disimilitud (diseñada para series de tiempo) es posible agrupar a los ríos en grupos basados en el comportamiento temporal de sus caudales. Esto con la finalidad de simplificar el modelamiento, pasando de un modelo por río, a un modelo por grupo.
+
+
 
 #### 3.2  Justificación Metodológica. 
+
+Ya que el problema se basa en identificar grupos de ríos cuyos Caudales se comportan de manera similar en el tiempo, se propone la utilización de el “Análisis Clúster de Series de Tiempo”, que es una técnica de agrupamiento que considera una función de “disimilitud” entre las series de tiempo (que mide que tan distintas son un par de series) y a partir de ella crea grupos de series, cada grupo contiene series de tiempo “parecidas”, al elegir adecuadamente la función de disimilitud (diseñada para series de tiempo) es posible agrupar a los ríos en grupos basados en el comportamiento temporal de sus caudales. Esto con la finalidad de simplificar el modelamiento, pasando de un modelo por río, a un modelo por grupo (Clúster).
+
+#### 3.3 Justificación Práctica 
+
+La aplicación del Análisis Cluster tiene aplicación directa en el
+
+### 4. Hipótesis
+
+
+
+### 5. Objetivo General
+
+El principal objetivo del proyecto es el de identificar y agrupar estaciones (asociadas a ríos en Brasil) en zonas, basandonos en el comportamiento temporal del caudal de los rios (medido en dichas estaciones), a fin de facilitar el modelamiento de los cuadales de al rededor de 150 estaciones repartidas en todo Brasil, que como sabemos posee uno de los sistemas hidricos más grandes y comlejos del mundo, por lo que al estudiar su comportamiento es posible escalarlo y adaptarlo a sistemas menos complejos como el de nuestro país.
+
+### 6. Objetivos Específicos
+
+- Comparar una gama de técnicas tanto de clusterización, así como la elección de distintas métricas o funciones de disimilitud a fin de identificar aquella combinación (disimilitud/algotimo de clusterización) que permita un adecuado agrupamiento de las series de tiempo asociadas al Caudal de los ríos, que tienen la peculiaridad de que las series estan conformadas por observaciones diarias de los caudales y además suelen ser series estacionales, y este tipo de series no han sido analizadas con esta técnica previamente.
+
+- Comparar el modelamiento de estas series de tiempo usando el análisis cluster versus el modelamiento sin un previo análisis, a fin de mostrar las ventajas en cuanto a tiempo y eficiencia de la metodología planteada.
+
+### 7. Metodología 
 
 El Análisis Clúster es un técnica de aprendizaje no supervisada que tiene como objetivo dividir un conjunto de objetos en grupos homogéneos (clústers). La partición se realiza de tal manera que los objetos en el mismo clúster son más similares entre sí que los objetos en diferentes grupos según un criterio definido. En muchas aplicaciones reales, el análisis de clúster debe realizarse con datos asociados a  series de tiempo. De hecho, los problemas de agrupamiento de series de tiempo surgen de manera natural en una amplia variedad de campos, incluyendo economía, finanzas, medicina, ecología, estudios ambientales, ingeniería y muchos otros. 
 Con frecuencia, la agrupación de series de tiempo desempeña un papel central en el problema estudiado. Estos argumentos motivan el creciente interés en la literatura sobre la agrupación de series de tiempo, especialmente en las últimas dos décadas, donde se ha proporcionado una gran cantidad de contribuciones sobre este tema. En Liao (2005) se puede encontrar un excelente estudio sobre la agrupación de series de tiempo, aunque posteriormente se han realizado nuevas contribuciones significativas. Particularmente importante en la última década ha sido la explosión de documentos sobre el tema provenientes tanto de comunidades de minería de datos como de reconocimiento de patrones. Fu (2011) proporciona una visión general completa y exhaustiva de las últimas orientaciones de minería de datos de series de tiempo, incluida una gama de problemas clave como representación, indexación y segmentación de series de tiempo, medidas de disimilitud, procedimientos de agrupamiento y herramientas de visualización.
@@ -50,24 +73,24 @@ De esta manera, diferentes enfoques para definir una función de disimilitud ent
 Una vez que se determina la medida de desemejanza, se puede obtener una matriz de desemejanza inicial por pares y luego se usa un algoritmo de agrupamiento convencional para formar grupos de objetos. De hecho, la mayoría de los enfoques de agrupamiento de series de tiempo revisados por Liao (2005) son variaciones de procedimientos generales, por ejemplo: K-Means, K-Medoids, PAM, CLARA (Kaufman & Rousseeuw (2005)) o de Clúster jerárquico que utilizan una gama de disimilitudes específicamente diseñadas para tratar con series de tiempo. 
 Una etapa adicional dentro del análisis consiste en determinar la cantidad de clústers que es más apropiada para los datos. Idealmente, los Clústers resultantes no solo deberían tener buenas propiedades estadísticas (compactas, bien separadas, conectadas y estables), sino también resultados relevantes. Se han propuesto una variedad de medidas para validar los resultados de un análisis de agrupamiento y determinar qué algoritmo de agrupamiento ofrece el mejor rendimiento  (Kerr y Churchill 2001; Yeung y otros 2001; Datta y Datta 2003). Esta validación puede basarse únicamente en las propiedades internas de los datos o en alguna referencia externa.
 
-#### 3.3 Justificación Práctica 
-
-
-### 4. Hipótesis
-
-
-
-### 5. Objetivo General
-
-
-### 6. Objetivos Específicos
-
-
-### 7. Metodología 
-
-
-
 ### 8. Plan de Trabajo 
+
+#### 8.1 Obtención de Datos
+
+La primera parte del plan conlleva la obtención de información de caudales de ríos al rededor de todo Brasil, para ello consultare en fuentes oficiales del gobierno Brasileño que publica estos datos de manera periodica atravez del "Operador Nacional del Sistema Electrico".
+
+#### 8.2 Depuración de Datos
+
+#### 8.3 Análisis Descriptivo
+
+#### 8.4 Identificación y Selección de Métricas / Funciones de Disimilitud
+
+#### 8.5 Identificación y Selección de Algoritmos de Clusterización
+
+#### 8.6 Comparación y Validación Méticas & Algoritmos de Clusterización
+
+#### 8.7 Modelamiento
+
 
 
 
@@ -89,6 +112,21 @@ Una etapa adicional dentro del análisis consiste en determinar la cantidad de c
 
 ### 10. Cronograma
 
+- Obtención de Datos: Mayo 2018 a Mayo 2018
+
+- Depuración de Datos: Mayo 2018 a Mayo 2018
+
+- Análisis Descriptivo: Mayo 2018 a Mayo 2018 
+
+- Identificación y Selección de Métricas / Funciones de Disimilitud: Mayo 2018 a Mayo 2018
+
+- Identificación y Selección de Algoritmos de Clusterización: Mayo 2018 a Mayo 2018
+
+- Comparación y Validación Méticas & Algoritmos de Clusterización: Mayo 2018 a Mayo 2018
+
+- Modelamiento: Mayo 2018 a Mayo 2018
+
+- Comparación de Modelos: Mayo 2018 a Mayo 2018
 
 
 

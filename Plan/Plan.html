@@ -75,14 +75,14 @@
 <h3>3. Justificación</h3>
 <div id="justificacion-teorica" class="section level4">
 <h4>3.1 Justificación Teórica</h4>
-<p>Ya que el problema se basa en identificar grupos de ríos cuyos Caudales se comportan de manera similar en el tiempo, se propone la utilización de el “Análisis Clúster de Series de Tiempo”, que es una técnica de agrupamiento que considera una función de “disimilitud” entre las series de tiempo (que mide que tan distintas son un par de series) y a partir de ella crea grupos de series, cada grupo contiene series de tiempo “parecidas”, al elegir adecuadamente la función de disimilitud (diseñada para series de tiempo) es posible agrupar a los ríos en grupos basados en el comportamiento temporal de sus caudales. Esto con la finalidad de simplificar el modelamiento, pasando de un modelo por río, a un modelo por grupo.</p>
 </div>
 <div id="justificacion-metodologica." class="section level4">
 <h4>3.2 Justificación Metodológica.</h4>
-<p>El Análisis Clúster es un técnica de aprendizaje no supervisada que tiene como objetivo dividir un conjunto de objetos en grupos homogéneos (clústers). La partición se realiza de tal manera que los objetos en el mismo clúster son más similares entre sí que los objetos en diferentes grupos según un criterio definido. En muchas aplicaciones reales, el análisis de clúster debe realizarse con datos asociados a series de tiempo. De hecho, los problemas de agrupamiento de series de tiempo surgen de manera natural en una amplia variedad de campos, incluyendo economía, finanzas, medicina, ecología, estudios ambientales, ingeniería y muchos otros. Con frecuencia, la agrupación de series de tiempo desempeña un papel central en el problema estudiado. Estos argumentos motivan el creciente interés en la literatura sobre la agrupación de series de tiempo, especialmente en las últimas dos décadas, donde se ha proporcionado una gran cantidad de contribuciones sobre este tema. En Liao (2005) se puede encontrar un excelente estudio sobre la agrupación de series de tiempo, aunque posteriormente se han realizado nuevas contribuciones significativas. Particularmente importante en la última década ha sido la explosión de documentos sobre el tema provenientes tanto de comunidades de minería de datos como de reconocimiento de patrones. Fu (2011) proporciona una visión general completa y exhaustiva de las últimas orientaciones de minería de datos de series de tiempo, incluida una gama de problemas clave como representación, indexación y segmentación de series de tiempo, medidas de disimilitud, procedimientos de agrupamiento y herramientas de visualización. Una pregunta crucial en el Análisis Clúster es establecer lo que queremos decir con objetos de datos “similares”, es decir, determinar una medida de similitud (o disimilitud) adecuada entre dos objetos. En el contexto específico de los datos asociados a series de tiempo, el concepto de disimilitud es particularmente complejo debido al carácter dinámico de la serie. Las diferencias generalmente consideradas en la agrupación convencional no podrían funcionar adecuadamente con los datos dependientes del tiempo porque ignoran la relación de interdependencia entre los valores. De esta manera, diferentes enfoques para definir una función de disimilitud entre series de tiempo han sido propuestos en la literatura pero nos centraremos en aquellas medidas asociadas a la autocorrelación (simple, e inversa), correlación cruzada y periodograma de las series (Ver: Kovac̃ić 1998; Struzik and Siebes 1999; Galeano and Peña 2000; Caiado, Crato, and Peña 2006). Estos enfoques basados en características tienen como objetivo representar la estructura dinámica de cada serie mediante un vector de características de menor dimensión, lo que permite una reducción de dimensionalidad (las series temporales son esencialmente datos de alta dimensionalidad) y un ahorro significativo en el tiempo de cálculo, además de que nos ayudan a alcanzar el objetivo central por el que usaremos el Análisis Clúster que es el de la modelización de series de tiempo. Una vez que se determina la medida de desemejanza, se puede obtener una matriz de desemejanza inicial por pares y luego se usa un algoritmo de agrupamiento convencional para formar grupos de objetos. De hecho, la mayoría de los enfoques de agrupamiento de series de tiempo revisados por Liao (2005) son variaciones de procedimientos generales, por ejemplo: K-Means, K-Medoids, PAM, CLARA (Kaufman &amp; Rousseeuw (2005)) o de Clúster jerárquico que utilizan una gama de disimilitudes específicamente diseñadas para tratar con series de tiempo. Una etapa adicional dentro del análisis consiste en determinar la cantidad de clústers que es más apropiada para los datos. Idealmente, los Clústers resultantes no solo deberían tener buenas propiedades estadísticas (compactas, bien separadas, conectadas y estables), sino también resultados relevantes. Se han propuesto una variedad de medidas para validar los resultados de un análisis de agrupamiento y determinar qué algoritmo de agrupamiento ofrece el mejor rendimiento (Kerr y Churchill 2001; Yeung y otros 2001; Datta y Datta 2003). Esta validación puede basarse únicamente en las propiedades internas de los datos o en alguna referencia externa.</p>
+<p>Ya que el problema se basa en identificar grupos de ríos cuyos Caudales se comportan de manera similar en el tiempo, se propone la utilización de el “Análisis Clúster de Series de Tiempo”, que es una técnica de agrupamiento que considera una función de “disimilitud” entre las series de tiempo (que mide que tan distintas son un par de series) y a partir de ella crea grupos de series, cada grupo contiene series de tiempo “parecidas”, al elegir adecuadamente la función de disimilitud (diseñada para series de tiempo) es posible agrupar a los ríos en grupos basados en el comportamiento temporal de sus caudales. Esto con la finalidad de simplificar el modelamiento, pasando de un modelo por río, a un modelo por grupo (Clúster).</p>
 </div>
 <div id="justificacion-practica" class="section level4">
 <h4>3.3 Justificación Práctica</h4>
+<p>La aplicación del Análisis Cluster tiene aplicación directa en el</p>
 </div>
 </div>
 <div id="hipotesis" class="section level3">
@@ -90,15 +90,43 @@
 </div>
 <div id="objetivo-general" class="section level3">
 <h3>5. Objetivo General</h3>
+<p>El principal objetivo del proyecto es el de identificar y agrupar estaciones (asociadas a ríos en Brasil) en zonas, basandonos en el comportamiento temporal del caudal de los rios (medido en dichas estaciones), a fin de facilitar el modelamiento de los cuadales de al rededor de 150 estaciones repartidas en todo Brasil, que como sabemos posee uno de los sistemas hidricos más grandes y comlejos del mundo, por lo que al estudiar su comportamiento es posible escalarlo y adaptarlo a sistemas menos complejos como el de nuestro país.</p>
 </div>
 <div id="objetivos-especificos" class="section level3">
 <h3>6. Objetivos Específicos</h3>
+<ul>
+<li><p>Comparar una gama de técnicas tanto de clusterización, así como la elección de distintas métricas o funciones de disimilitud a fin de identificar aquella combinación (disimilitud/algotimo de clusterización) que permita un adecuado agrupamiento de las series de tiempo asociadas al Caudal de los ríos, que tienen la peculiaridad de que las series estan conformadas por observaciones diarias de los caudales y además suelen ser series estacionales, y este tipo de series no han sido analizadas con esta técnica previamente.</p></li>
+<li><p>Comparar el modelamiento de estas series de tiempo usando el análisis cluster versus el modelamiento sin un previo análisis, a fin de mostrar las ventajas en cuanto a tiempo y eficiencia de la metodología planteada.</p></li>
+</ul>
 </div>
 <div id="metodologia" class="section level3">
 <h3>7. Metodología</h3>
+<p>El Análisis Clúster es un técnica de aprendizaje no supervisada que tiene como objetivo dividir un conjunto de objetos en grupos homogéneos (clústers). La partición se realiza de tal manera que los objetos en el mismo clúster son más similares entre sí que los objetos en diferentes grupos según un criterio definido. En muchas aplicaciones reales, el análisis de clúster debe realizarse con datos asociados a series de tiempo. De hecho, los problemas de agrupamiento de series de tiempo surgen de manera natural en una amplia variedad de campos, incluyendo economía, finanzas, medicina, ecología, estudios ambientales, ingeniería y muchos otros. Con frecuencia, la agrupación de series de tiempo desempeña un papel central en el problema estudiado. Estos argumentos motivan el creciente interés en la literatura sobre la agrupación de series de tiempo, especialmente en las últimas dos décadas, donde se ha proporcionado una gran cantidad de contribuciones sobre este tema. En Liao (2005) se puede encontrar un excelente estudio sobre la agrupación de series de tiempo, aunque posteriormente se han realizado nuevas contribuciones significativas. Particularmente importante en la última década ha sido la explosión de documentos sobre el tema provenientes tanto de comunidades de minería de datos como de reconocimiento de patrones. Fu (2011) proporciona una visión general completa y exhaustiva de las últimas orientaciones de minería de datos de series de tiempo, incluida una gama de problemas clave como representación, indexación y segmentación de series de tiempo, medidas de disimilitud, procedimientos de agrupamiento y herramientas de visualización. Una pregunta crucial en el Análisis Clúster es establecer lo que queremos decir con objetos de datos “similares”, es decir, determinar una medida de similitud (o disimilitud) adecuada entre dos objetos. En el contexto específico de los datos asociados a series de tiempo, el concepto de disimilitud es particularmente complejo debido al carácter dinámico de la serie. Las diferencias generalmente consideradas en la agrupación convencional no podrían funcionar adecuadamente con los datos dependientes del tiempo porque ignoran la relación de interdependencia entre los valores. De esta manera, diferentes enfoques para definir una función de disimilitud entre series de tiempo han sido propuestos en la literatura pero nos centraremos en aquellas medidas asociadas a la autocorrelación (simple, e inversa), correlación cruzada y periodograma de las series (Ver: Kovac̃ić 1998; Struzik and Siebes 1999; Galeano and Peña 2000; Caiado, Crato, and Peña 2006). Estos enfoques basados en características tienen como objetivo representar la estructura dinámica de cada serie mediante un vector de características de menor dimensión, lo que permite una reducción de dimensionalidad (las series temporales son esencialmente datos de alta dimensionalidad) y un ahorro significativo en el tiempo de cálculo, además de que nos ayudan a alcanzar el objetivo central por el que usaremos el Análisis Clúster que es el de la modelización de series de tiempo. Una vez que se determina la medida de desemejanza, se puede obtener una matriz de desemejanza inicial por pares y luego se usa un algoritmo de agrupamiento convencional para formar grupos de objetos. De hecho, la mayoría de los enfoques de agrupamiento de series de tiempo revisados por Liao (2005) son variaciones de procedimientos generales, por ejemplo: K-Means, K-Medoids, PAM, CLARA (Kaufman &amp; Rousseeuw (2005)) o de Clúster jerárquico que utilizan una gama de disimilitudes específicamente diseñadas para tratar con series de tiempo. Una etapa adicional dentro del análisis consiste en determinar la cantidad de clústers que es más apropiada para los datos. Idealmente, los Clústers resultantes no solo deberían tener buenas propiedades estadísticas (compactas, bien separadas, conectadas y estables), sino también resultados relevantes. Se han propuesto una variedad de medidas para validar los resultados de un análisis de agrupamiento y determinar qué algoritmo de agrupamiento ofrece el mejor rendimiento (Kerr y Churchill 2001; Yeung y otros 2001; Datta y Datta 2003). Esta validación puede basarse únicamente en las propiedades internas de los datos o en alguna referencia externa.</p>
 </div>
 <div id="plan-de-trabajo" class="section level3">
 <h3>8. Plan de Trabajo</h3>
+<div id="obtencion-de-datos" class="section level4">
+<h4>8.1 Obtención de Datos</h4>
+<p>La primera parte del plan conlleva la obtención de información de caudales de ríos al rededor de todo Brasil, para ello consultare en fuentes oficiales del gobierno Brasileño que publica estos datos de manera periodica atravez del “Operador Nacional del Sistema Electrico”.</p>
+</div>
+<div id="depuracion-de-datos" class="section level4">
+<h4>8.2 Depuración de Datos</h4>
+</div>
+<div id="analisis-descriptivo" class="section level4">
+<h4>8.3 Análisis Descriptivo</h4>
+</div>
+<div id="identificacion-y-seleccion-de-metricas-funciones-de-disimilitud" class="section level4">
+<h4>8.4 Identificación y Selección de Métricas / Funciones de Disimilitud</h4>
+</div>
+<div id="identificacion-y-seleccion-de-algoritmos-de-clusterizacion" class="section level4">
+<h4>8.5 Identificación y Selección de Algoritmos de Clusterización</h4>
+</div>
+<div id="comparacion-y-validacion-meticas-algoritmos-de-clusterizacion" class="section level4">
+<h4>8.6 Comparación y Validación Méticas &amp; Algoritmos de Clusterización</h4>
+</div>
+<div id="modelamiento" class="section level4">
+<h4>8.7 Modelamiento</h4>
+</div>
 </div>
 <div id="bibliografia" class="section level3">
 <h3>9. Bibliografía</h3>
@@ -120,6 +148,16 @@
 </div>
 <div id="cronograma" class="section level3">
 <h3>10. Cronograma</h3>
+<ul>
+<li><p>Obtención de Datos: Mayo 2018 a Mayo 2018</p></li>
+<li><p>Depuración de Datos: Mayo 2018 a Mayo 2018</p></li>
+<li><p>Análisis Descriptivo: Mayo 2018 a Mayo 2018</p></li>
+<li><p>Identificación y Selección de Métricas / Funciones de Disimilitud: Mayo 2018 a Mayo 2018</p></li>
+<li><p>Identificación y Selección de Algoritmos de Clusterización: Mayo 2018 a Mayo 2018</p></li>
+<li><p>Comparación y Validación Méticas &amp; Algoritmos de Clusterización: Mayo 2018 a Mayo 2018</p></li>
+<li><p>Modelamiento: Mayo 2018 a Mayo 2018</p></li>
+<li><p>Comparación de Modelos: Mayo 2018 a Mayo 2018</p></li>
+</ul>
 </div>
 </div>
 </article>
