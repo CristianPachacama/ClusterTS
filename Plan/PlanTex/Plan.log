@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.8)  11 MAY 2018 10:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6650) (preloaded format=pdflatex 2018.4.8)  11 MAY 2018 13:13
 entering extended mode
 **./Plan.tex
 (Plan.tex
@@ -496,39 +496,73 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks23
 
 (/home/cristian/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
-(Plan.aux
+(/home/cristian/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen123
+\lightrulewidth=\dimen124
+\cmidrulewidth=\dimen125
+\belowrulesep=\dimen126
+\belowbottomsep=\dimen127
+\aboverulesep=\dimen128
+\abovetopsep=\dimen129
+\cmidrulesep=\dimen130
+\cmidrulekern=\dimen131
+\defaultaddspace=\dimen132
+\@cmidla=\count105
+\@cmidlb=\count106
+\@aboverulesep=\dimen133
+\@belowrulesep=\dimen134
+\@thisruleclass=\count107
+\@lastruleclass=\count108
+\@thisrulewidth=\dimen135
+)
+(/home/cristian/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip46
+\multirow@cntb=\count109
+\multirow@dima=\skip47
+\bigstrutjot=\dimen136
+)
+(/home/cristian/.miktex/texmfs/install/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has section divisions on input line 50.
+
+
+Package tocbibind Note: Using section or other style headings.
+
+) (Plan.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `Plan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
 
 (/home/cristian/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen123
+\scratchcounter=\count110
+\scratchdimen=\dimen137
 \scratchbox=\box28
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count111
+\nofMParguments=\count112
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen124
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen138
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
 \everyMPtoPDFconversion=\toks25
 ) (/home/cristian/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -612,16 +646,16 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
 (/home/cristian/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 16.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
 (/home/cristian/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (1.52666pt too wide) in paragraph at lines 33--34
+Overfull \hbox (1.52666pt too wide) in paragraph at lines 40--41
 []\OT1/cmr/bx/n/10 Director del Proyec-to de In-ves-ti-gacion: \OT1/cmr/m/n/10
  PhD. Adri-ana Uquil-
  []
@@ -631,28 +665,39 @@ Overfull \hbox (1.52666pt too wide) in paragraph at lines 33--34
 
 
 pdfTeX warning: pdflatex (file pdftex.map): cannot open font map file
-] [2] [3] [4] (Plan.aux
+] [2] [3]
+Overfull \hbox (489.58653pt too wide) in paragraph at lines 86--101
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] (Plan.bbl [5]) [6] (Plan.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 4030 strings out of 495205
- 53180 string characters out of 3181160
- 131147 words of memory out of 3000000
- 7263 multiletter control sequences out of 15000+200000
- 9804 words of font info for 37 fonts, out of 3000000 for 9000
+ 4248 strings out of 495205
+ 56353 string characters out of 3181160
+ 133348 words of memory out of 3000000
+ 7462 multiletter control sequences out of 15000+200000
+ 12198 words of font info for 47 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,6n,30p,1053b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12
+ 41i,10n,30p,1053b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr7.p
+k> </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmti7.p
+k> </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmti10.
+pk> </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12
 .pk> </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx1
 0.pk> </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr1
 0.pk> </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmbx
 12.pk> </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr
 12.pk> </home/cristian/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr
 17.pk>
-Output written on Plan.pdf (4 pages, 75567 bytes).
+Output written on Plan.pdf (6 pages, 97461 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
+ 300 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

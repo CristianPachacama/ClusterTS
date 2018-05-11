@@ -7,6 +7,13 @@
 \usepackage{graphicx}
 %\usepackage{lmodern}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%Paquete de Tablas
+\usepackage{booktabs}
+\usepackage{multirow}
+%Referencias BibTeX
+\usepackage[nottoc]{tocbibind}
+
+
 \author{Cristian Pachacama}
 \title{Plan de Proyecto de Titulación}
 
@@ -72,6 +79,60 @@ Una etapa adicional dentro del análisis consiste en determinar la cantidad de c
 
 \subsection{Plan de Trabajo}
 
+\begin{table}[h!]
+\centering
+\caption{Plan de Trabajo}
+\label{plan}
+\begin{tabular}{l|l}
+\toprule
+Actividad   & Descripción  \\ \hline
 
+\multirow{5}{5em}{Obtención de Datos} 
+ & Descarga de Bases de Datos Meteorológicos Brasil – Fuente: Banco de Datos Meteorológicos (CPTEC).\\ 
+ & Descarga de Bases de Datos Hídricos Brasil – Fuente: Operador Nacional do Sistema Elétrico Brasil (ONS).\\ 
+ & Descarga de Bases de Datos Meteorológicos Globales (Series de Tiempo de índices meteorológicos) - Fuente: National Weather Service (NOAA). \\ 
+ & Descarga de Bases de Datos Meteorológicos Globales (Series de Tiempo de variables meteorológicos) - Fuente: Global Climate Observing System (GCOS).\\
+ & Descarga de Bases de Datos Meteorológicos Globales (Datos meteorológicos y de clima) - Fuente: Climatic Reserch Unit.\\
+ \hline
+
+Tratamiento de Datos  &   \\ \hline
+
+
+Análisis Descriptivo &   \\ \hline
+
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Cronograma}
+
+\begin{table}[h!]
+\centering
+\caption{Cronograma de Trabajo}
+\label{cronograma}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+                     & Abril   & Mayo   & Junio   & Julio  \\ \hline
+Obtención de Datos   &   &   &   &    \\ \hline
+Depuración de Datos  &   &   &   &    \\ \hline
+Análisis Descriptivo &   &   &   &    \\ \hline
+Depuración de Datos  &   &   &   &    \\ \hline
+Depuración de Datos  &   &   &   &    \\ \hline
+Depuración de Datos  &   &   &   &    \\ \hline
+Depuración de Datos  &   &   &   &    \\ \hline
+Depuración de Datos  &   &   &   &    \\ \hline
+Depuración de Datos  &   &   &   &    \\ \hline
+
+\hline
+\end{tabular}
+\end{table}
+
+\section{Ejemplo BibTeX}
+This document is an example of BibTeX using in bibliography management. Three items are cited: \textit{The \LaTeX\ Companion} book \cite{latexcompanion}, the Einstein journal paper \cite{einstein}, and the Donald Knuth's website \cite{knuthwebsite}. The \LaTeX\ related items are \cite{latexcompanion,knuthwebsite}. 
+
+%%%%%%%%%%%    Bibliografía BibTex   %%%%%%%%
+\bibliographystyle{unsrt}
+\bibliography{bibliografia}
 
 \end{document}
