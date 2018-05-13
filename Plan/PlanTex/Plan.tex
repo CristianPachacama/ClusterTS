@@ -1,4 +1,4 @@
-\documentclass[10pt,a5paper]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
@@ -6,7 +6,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 %\usepackage{lmodern}
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
 %Paquete de Tablas
 \usepackage{booktabs}
 \usepackage{multirow}
@@ -50,8 +50,12 @@
 ANÁLISIS CLUSTER DE SERIES DE TIEMPO.
 
 \subsection{Planteamiento del Problema}
-Brasil tiene una de los sistemas hidrológicos más complejos, diversos y extensos del mundo. A diferencia de la gran mayoría de los países desarrollados, Brasil tiene en los ríos su principal fuente de generación de electricidad , ocupando el tercer lugar dentro de los más grandes productores hidroeléctricos del mundo. Debido a la importancia del sector hidroeléctrico, buscar formas de facilitar y mejorar el modelamiento de esta enorme cantidad de datos asociados al sector es un problema prioritario. 
-Dentro de ellos, un problema específico es la identificación de regiones (no necesariamente geográficas) en las que los Caudales de los ríos poseen un comportamiento similar en el tiempo, esto debido a que de hacerlo es posible simplificar el modelamiento de Caudales.
+Brasil tiene una de los sistemas hidrológicos más complejos, diversos y extensos del mundo. A diferencia de la gran mayoría de los países desarrollados, Brasil tiene en los ríos su principal fuente de generación de electricidad , ocupando el tercer lugar dentro de los más grandes productores hidroeléctricos del mundo. Debido a la importancia del sector hidroeléctrico, buscar formas de facilitar y mejorar el modelamiento de datos asociados a este sector es un problema prioritario. Provocado por la dificultad que supone lidiar con la enorme cantidad de datos asociados a mediociones de Caudales de los ríos que componen este sistema, que cuenta con alrededor de 150 estaciones de medición repartidas en todo Brasil. Dichos datos se presentan en forma de Series de Tiempo que posee tres carácteristicas que dificultan su análisis, la primera es que estas series de tiempo poseen observaciones diarias de los caudales en un periodo de tiempo de alrededor de 30 años, es decir, son series muy extensas. La segunda característica es que estas series de tiempo son estacionales, y por último existe evidencia de que el ruido o error asociado a estas series no se distribuye normalmente sino que su distribución posee colas más pesadas como las analizadas en teoría de valores extremos.
+
+En ese contexto, la identificación de grupos o zonas (no necesariamente geográficas) en las que los caudales de los ríos posean un comportamiento temporal similar, resulta ser un problema central.
+
+%Dentro de ellos, un problema específico es la identificación de regiones (no necesariamente geográficas) en las que los Caudales de los ríos poseen un comportamiento similar en el tiempo, esto debido a que de hacerlo es posible simplificar el modelamiento de Caudales.
+
 
 \subsection{Justificación}
 Ya que el problema se basa en identificar grupos de ríos cuyos Caudales se comportan de manera similar en el tiempo, se propone la utilización de el “Análisis Clúster de Series de Tiempo”, que es una técnica de agrupamiento que considera una función de “disimilitud” entre las series de tiempo (que mide que tan distintas son un par de series) y a partir de ella crea grupos de series, cada grupo contiene series de tiempo “parecidas”, al elegir adecuadamente la función de disimilitud (diseñada para series de tiempo) es posible agrupar a los ríos en grupos basados en el comportamiento temporal de sus caudales. Esto con la finalidad de simplificar el modelamiento, pasando de un modelo por río, a un modelo por grupo (Clúster).
@@ -63,13 +67,18 @@ Ya que el problema se basa en identificar grupos de ríos cuyos Caudales se comp
 El principal objetivo del proyecto es el de identificar y agrupar estaciones (asociadas a ríos en Brasil) en zonas, basandonos en el comportamiento temporal del caudal de los rios (medido en dichas estaciones), a fin de facilitar el modelamiento de los cuadales de al rededor de 150 estaciones repartidas en todo Brasil, que como sabemos posee uno de los sistemas hidricos más grandes y comlejos del mundo, por lo que al estudiar su comportamiento es posible escalarlo y adaptarlo a sistemas menos complejos como el de nuestro país.
 
 \subsection{Objetivos Específicos}
-\begin{itemize}
+\begin{enumerate}
 
 \item Comparar una gama de técnicas tanto de clusterización, así como la elección de distintas métricas o funciones de disimilitud a fin de identificar aquella combinación (disimilitud/algotimo de clusterización) que permita un adecuado agrupamiento de las series de tiempo asociadas al Caudal de los ríos, que tienen la peculiaridad de que las series estan conformadas por observaciones diarias de los caudales y además suelen ser series estacionales, y este tipo de series no han sido analizadas con esta técnica previamente.
 
 \item Comparar el modelamiento de estas series de tiempo usando el análisis cluster versus el modelamiento sin un previo análisis, a fin de mostrar las ventajas en cuanto a tiempo y eficiencia de la metodología planteada.
 
-\end{itemize}
+\item Automatizar la descomposición y Análisis Clúster de series de tiempo de Caudales atravez de la utilización de software estadístico y programación.
+
+\item Crear una Plataforma de Análisis (Visualización y descomposición) de las Series de Tiempo de Clima, Caudales, y Contaminación, que permita a más investigadores análizar toda la información recolectada durante este proyecto.
+
+\end{enumerate}
+
 
 \subsection{Metodología}
 El Análisis Clúster es un técnica de aprendizaje no supervisada que tiene como objetivo dividir un conjunto de objetos en grupos homogéneos (clústers). La partición se realiza de tal manera que los objetos en el mismo clúster son más similares entre sí que los objetos en diferentes grupos según un criterio definido. En muchas aplicaciones reales, el análisis de clúster debe realizarse con datos asociados a  series de tiempo. De hecho, los problemas de agrupamiento de series de tiempo surgen de manera natural en una amplia variedad de campos, incluyendo economía, finanzas, medicina, ecología, estudios ambientales, ingeniería y muchos otros. 
