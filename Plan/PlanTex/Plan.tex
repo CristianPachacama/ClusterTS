@@ -12,7 +12,7 @@
 \usepackage{multirow}
 %Referencias BibTeX
 \usepackage[nottoc]{tocbibind}
-
+\usepackage{hyperref}
 
 \author{Cristian Pachacama}
 \title{Plan de Proyecto de Titulación}
@@ -79,28 +79,44 @@ Una etapa adicional dentro del análisis consiste en determinar la cantidad de c
 
 \subsection{Plan de Trabajo}
 
+El plan de trabajo se resume en la Tabla \ref{TablaPlan}.
+
 \begin{table}[h!]
 \centering
-\caption{Plan de Trabajo}
-\label{plan}
-\begin{tabular}{l|l}
-\toprule
-Actividad   & Descripción  \\ \hline
 
-\multirow{5}{5em}{Obtención de Datos} 
- & Descarga de Bases de Datos Meteorológicos Brasil – Fuente: Banco de Datos Meteorológicos (CPTEC).\\ 
- & Descarga de Bases de Datos Hídricos Brasil – Fuente: Operador Nacional do Sistema Elétrico Brasil (ONS).\\ 
- & Descarga de Bases de Datos Meteorológicos Globales (Series de Tiempo de índices meteorológicos) - Fuente: National Weather Service (NOAA). \\ 
- & Descarga de Bases de Datos Meteorológicos Globales (Series de Tiempo de variables meteorológicos) - Fuente: Global Climate Observing System (GCOS).\\
- & Descarga de Bases de Datos Meteorológicos Globales (Datos meteorológicos y de clima) - Fuente: Climatic Reserch Unit.\\
- \hline
+\label{TablaPlan}
+\begin{tabular}{|p{2.3cm}|p{7cm}|}
+\hline
+Actividad  & Descripción  \\ \hline
 
-Tratamiento de Datos  &   \\ \hline
+Obtención de Datos &  Descarga de Bases de Datos Brasil de las fuentes: 
+
+\begin{itemize}
+
+\item Datos Hídricos Operador Nacional do Sistema Elétrico Brasil (ONS).
+\item Datos Meteorológicos Globales: National Weather Service. (NOAA), Global Climate Observing System (GCOS)y CPTEC.
+\item Datos de Clima: Climatic Reserch Unit, Departamento de Ciências Atmosféricas (U. São Paulo), e Instituto Nacional de Meteorología de Brasil (INMET)
+\end{itemize}
+
+ \\ \hline
+
+Tratamiento de Datos  &  
+
+\begin{itemize}
+\item Depuración de Datos.
+\item Estandarización de Datos.
+\item Unificación de Datos para el modelamiento.
+\end{itemize}
+
+ \\ \hline
 
 
-Análisis Descriptivo &   \\ \hline
+Análisis y Modelamiento &   \\ \hline
+
+Automatización &  \\ \hline
 
 \end{tabular}
+\caption{Plan de Trabajo}
 \end{table}
 
 
