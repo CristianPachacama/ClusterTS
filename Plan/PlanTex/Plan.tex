@@ -10,6 +10,7 @@
 %Paquete de Tablas
 \usepackage{booktabs}
 \usepackage{multirow}
+\usepackage{array}
 %Referencias BibTeX
 \usepackage[nottoc]{tocbibind}
 \usepackage{hyperref}
@@ -46,10 +47,11 @@
 
 \subsection{Título del Trabajo de Titulación}
 
-ANÁLISIS CLUSTER DE SERIES DE TIEMPO CON COVARIANTES.
+ANÁLISIS CLUSTER DE SERIES DE TIEMPO.
 
 \subsection{Planteamiento del Problema}
-Brasil tiene una de los sistemas hidrológicos más complejos, diversos y extensos del mundo. A diferencia de la gran mayoría de los países desarrollados, Brasil tiene en los ríos su principal fuente de generación de electricidad , ocupando el tercer lugar dentro de los más grandes productores hidroeléctricos del mundo. Debido a la importancia del sector hidroeléctrico, buscar formas de facilitar y mejorar el modelamiento de esta enorme cantidad de datos asociados al sector es un problema prioritario. Dentro de ellos, un problema específico es la identificación de regiones (no necesariamente geográficas) en las que los Caudales de los ríos poseen un comportamiento similar en el tiempo, esto debido a que de hacerlo es posible simplificar el modelamiento de Caudales.
+Brasil tiene una de los sistemas hidrológicos más complejos, diversos y extensos del mundo. A diferencia de la gran mayoría de los países desarrollados, Brasil tiene en los ríos su principal fuente de generación de electricidad , ocupando el tercer lugar dentro de los más grandes productores hidroeléctricos del mundo. Debido a la importancia del sector hidroeléctrico, buscar formas de facilitar y mejorar el modelamiento de esta enorme cantidad de datos asociados al sector es un problema prioritario. 
+Dentro de ellos, un problema específico es la identificación de regiones (no necesariamente geográficas) en las que los Caudales de los ríos poseen un comportamiento similar en el tiempo, esto debido a que de hacerlo es posible simplificar el modelamiento de Caudales.
 
 \subsection{Justificación}
 Ya que el problema se basa en identificar grupos de ríos cuyos Caudales se comportan de manera similar en el tiempo, se propone la utilización de el “Análisis Clúster de Series de Tiempo”, que es una técnica de agrupamiento que considera una función de “disimilitud” entre las series de tiempo (que mide que tan distintas son un par de series) y a partir de ella crea grupos de series, cada grupo contiene series de tiempo “parecidas”, al elegir adecuadamente la función de disimilitud (diseñada para series de tiempo) es posible agrupar a los ríos en grupos basados en el comportamiento temporal de sus caudales. Esto con la finalidad de simplificar el modelamiento, pasando de un modelo por río, a un modelo por grupo (Clúster).
@@ -85,11 +87,11 @@ El plan de trabajo se resume en la Tabla \ref{TablaPlan}.
 \centering
 
 \label{TablaPlan}
-\begin{tabular}{|p{2.3cm}|p{7cm}|}
+\begin{tabular}{|m{2.4cm}|p{7.4cm}|}
 \hline
 Actividad  & Descripción  \\ \hline
 
-Obtención de Datos &  Descarga de Bases de Datos Brasil de las fuentes: 
+\centering{Obtención de Datos} &  Descarga de Bases de Datos Brasil de las fuentes: 
 
 \begin{itemize}
 
@@ -100,7 +102,7 @@ Obtención de Datos &  Descarga de Bases de Datos Brasil de las fuentes:
 
  \\ \hline
 
-Tratamiento de Datos  &  
+\centering{Tratamiento de Datos}  &  
 
 \begin{itemize}
 \item Depuración de Datos.
@@ -111,10 +113,10 @@ Tratamiento de Datos  &
  \\ \hline
 
 
-Análisis y Modelamiento &   \\ \hline
+\centering{Análisis y Modelamiento} &   \\ \hline
 
-Automatización &  \\ \hline
-
+\centering{Automatización} &  \\ \hline
+\centering{Conclusiones y Recomendaciones} &  \\ \hline
 \end{tabular}
 \caption{Plan de Trabajo}
 \end{table}
@@ -123,26 +125,26 @@ Automatización &  \\ \hline
 
 \subsection{Cronograma}
 
+A continuación se muestra el cronograma de actividades planificadas resumidas en la Tabla \ref{Cronograma}
+
 \begin{table}[h!]
 \centering
-\caption{Cronograma de Trabajo}
-\label{cronograma}
-\begin{tabular}{|l|c|c|c|c|}
+\label{Cronograma}
+\begin{tabular}{|m{2.5cm} *{5}{|m{0.95cm}}|}
 \hline
-                     & Abril   & Mayo   & Junio   & Julio  \\ \hline
-Obtención de Datos   &   &   &   &    \\ \hline
-Depuración de Datos  &   &   &   &    \\ \hline
-Análisis Descriptivo &   &   &   &    \\ \hline
-Depuración de Datos  &   &   &   &    \\ \hline
-Depuración de Datos  &   &   &   &    \\ \hline
-Depuración de Datos  &   &   &   &    \\ \hline
-Depuración de Datos  &   &   &   &    \\ \hline
-Depuración de Datos  &   &   &   &    \\ \hline
-Depuración de Datos  &   &   &   &    \\ \hline
+       & Abril   & Mayo   & Junio   & Julio & Agosto  \\ \hline
+Obtención de Datos   & \centering{X}  &  \centering{X} &   &  &  \\ \hline
+Tratamiento de Datos  &   &  \centering{X} &   &  &  \\ \hline
+Análisis y Modelamiento &   & \centering{X} & \centering{X}  & \centering{X} &  \\ \hline
+Automatización  &   &   & \centering{X}  & \centering{X} & X \\ \hline
+Conclusiones y Recomendaciones  &   &   &   &  & X \\ 
 
 \hline
 \end{tabular}
+\caption{Cronograma de Trabajo}
 \end{table}
+
+
 
 \section{Ejemplo BibTeX}
 This document is an example of BibTeX using in bibliography management. Three items are cited: \textit{The \LaTeX\ Companion} book \cite{latexcompanion}, the Einstein journal paper \cite{einstein}, and the Donald Knuth's website \cite{knuthwebsite}. The \LaTeX\ related items are \cite{latexcompanion,knuthwebsite}. 
