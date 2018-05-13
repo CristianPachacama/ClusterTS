@@ -1,18 +1,36 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{}
 
-\bibitem{latexcompanion}
-Michel Goossens, Frank Mittelbach, and Alexander Samarin.
-\newblock {\em The \LaTeX\ Companion}.
-\newblock Addison-Wesley, Reading, Massachusetts, 1993.
+\bibitem[Caiado et~al., 2006]{caiado2006periodogram}
+Caiado, J., Crato, N., and Pe{\~n}a, D. (2006).
+\newblock A periodogram-based metric for time series classification.
+\newblock {\em Computational Statistics \& Data Analysis}, 50(10):2668--2684.
 
-\bibitem{einstein}
-Albert Einstein.
-\newblock {Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies].
-\newblock {\em Annalen der Physik}, 322(10):891--921, 1905.
+\bibitem[Chouakria and Nagabhushan, 2007]{chouakria2007adaptive}
+Chouakria, A.~D. and Nagabhushan, P.~N. (2007).
+\newblock Adaptive dissimilarity index for measuring time series proximity.
+\newblock {\em Advances in Data Analysis and Classification}, 1(1):5--21.
 
-\bibitem{knuthwebsite}
-Donald Knuth.
-\newblock Knuth: Computers and typesetting.
+\bibitem[Fu, 2011]{fu2011review}
+Fu, T.-c. (2011).
+\newblock A review on time series data mining.
+\newblock {\em Engineering Applications of Artificial Intelligence},
+  24(1):164--181.
+
+\bibitem[Galeano and Pe{\~n}a, 2000]{galeano2000multivariate}
+Galeano, P. and Pe{\~n}a, D.~P. (2000).
+\newblock Multivariate analysis in vector time series.
+\newblock {\em Resenhas do Instituto de Matem{\'a}tica e Estat{\'\i}stica da
+  Universidade de S{\~a}o Paulo}, 4(4):383--403.
+
+\bibitem[Liao, 2005]{liao2005clustering}
+Liao, T.~W. (2005).
+\newblock Clustering of time series data—a survey.
+\newblock {\em Pattern recognition}, 38(11):1857--1874.
+
+\bibitem[Struzik and Siebes, 1999]{struzik1999haar}
+Struzik, Z.~R. and Siebes, A. (1999).
+\newblock The haar wavelet transform in the time series similarity paradigm.
+\newblock In {\em European Conference on Principles of Data Mining and
+  Knowledge Discovery}, pages 12--22. Springer.
 
 \end{thebibliography}
