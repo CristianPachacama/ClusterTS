@@ -6,7 +6,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 %\usepackage{lmodern}
-\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[left=4cm,right=3cm,top=3cm,bottom=3cm]{geometry}
 %Paquete de Tablas
 \usepackage{booktabs}
 \usepackage{multirow}
@@ -83,10 +83,18 @@ El principal objetivo del proyecto es el de agrupar estaciones (asociadas a río
 \subsection{Metodología}
 El Análisis Clúster es un técnica de aprendizaje no supervisada que tiene como objetivo dividir un conjunto de objetos en grupos homogéneos (clústers). La partición se realiza de tal manera que los objetos en el mismo clúster son más similares entre sí que los objetos en diferentes grupos según un criterio definido. En muchas aplicaciones reales, el análisis de clúster debe realizarse con datos asociados a  series de tiempo. De hecho, los problemas de agrupamiento de series de tiempo surgen de manera natural en una amplia variedad de campos, incluyendo economía, finanzas, medicina, ecología, estudios ambientales, ingeniería y muchos otros. 
 Con frecuencia, la agrupación de series de tiempo desempeña un papel central en el problema estudiado. Estos argumentos motivan el creciente interés en la literatura sobre la agrupación de series de tiempo, especialmente en las últimas dos décadas, donde se ha proporcionado una gran cantidad de contribuciones sobre este tema. En \cite{liao2005clustering} se puede encontrar un excelente estudio sobre la agrupación de series de tiempo, aunque posteriormente se han realizado nuevas contribuciones significativas. Particularmente importante en la última década ha sido la explosión de documentos sobre el tema provenientes tanto de comunidades de minería de datos como de reconocimiento de patrones. \cite{fu2011review} proporciona una visión general completa y exhaustiva de las últimas orientaciones de minería de datos de series de tiempo, incluida una gama de problemas clave como representación, indexación y segmentación de series de tiempo, medidas de disimilitud, procedimientos de agrupamiento y herramientas de visualización.
+
 Una pregunta crucial en el Análisis Clúster es establecer lo que queremos decir con objetos de datos "similares", es decir, determinar una medida de similitud (o disimilitud) adecuada entre dos objetos. En el contexto específico de los datos asociados a series de tiempo, el concepto de disimilitud es particularmente complejo debido al carácter dinámico de la serie. Las diferencias generalmente consideradas en la agrupación convencional no podrían funcionar adecuadamente con los datos dependientes del tiempo porque ignoran la relación de interdependencia entre los valores. 
-De esta manera, diferentes enfoques para definir una función de disimilitud entre series de tiempo han sido propuestos en la literatura pero nos centraremos en aquellas medidas asociadas a la autocorrelación (simple, e inversa), correlación cruzada y periodograma de las series (Ver: \cite{struzik1999haar}; \cite{galeano2000multivariate}; \cite{caiado2006periodogram};\cite{chouakria2007adaptive}). Estos enfoques basados en características tienen como objetivo representar la estructura dinámica de cada serie mediante un vector de características de menor dimensión, lo que permite una reducción de dimensionalidad (las series temporales son esencialmente datos de alta dimensionalidad) y un ahorro significativo en el tiempo de cálculo, además de que nos ayudan a alcanzar el objetivo central por el que usaremos el Análisis Clúster que es el de la modelización de series de tiempo.
-Una vez que se determina la medida de desemejanza, se puede obtener una matriz de desemejanza inicial por pares y luego se usa un algoritmo de agrupamiento convencional para formar grupos de objetos. De hecho, la mayoría de los enfoques de agrupamiento de series de tiempo revisados por Liao (2005) son variaciones de procedimientos generales, por ejemplo: K-Means, K-Medoids, PAM, CLARA (Kaufman \& Rousseeuw (2005)) o de Clúster jerárquico que utilizan una gama de disimilitudes específicamente diseñadas para tratar con series de tiempo. 
-Una etapa adicional dentro del análisis consiste en determinar la cantidad de clústers que es más apropiada para los datos. Idealmente, los Clústers resultantes no solo deberían tener buenas propiedades estadísticas (compactas, bien separadas, conectadas y estables), sino también resultados relevantes. Se han propuesto una variedad de medidas para validar los resultados de un análisis de agrupamiento y determinar qué algoritmo de agrupamiento ofrece el mejor rendimiento  (Kerr y Churchill 2001; Yeung y otros 2001; Datta y Datta 2003). Esta validación puede basarse únicamente en las propiedades internas de los datos o en alguna referencia externa.
+
+De esta manera, diferentes enfoques para definir una función de disimilitud entre series de tiempo han sido propuestos en la literatura pero nos centraremos en aquellas medidas asociadas a la autocorrelación (simple, e inversa), correlación cruzada y periodograma de las series (Ver: \cite{struzik1999haar};  \cite{galeano2000multivariate}; \cite{caiado2006periodogram}; \cite{chouakria2007adaptive}). Estos enfoques basados en características tienen como objetivo representar la estructura dinámica de cada serie mediante un vector de características de menor dimensión, lo que permite una reducción de dimensionalidad (las series temporales son esencialmente datos de alta dimensionalidad) y un ahorro significativo en el tiempo de cálculo, además de que nos ayudan a alcanzar el objetivo central por el que usaremos el Análisis Clúster que es el de la modelización de series de tiempo.
+
+Una vez que se determina la medida de disimilitud, se obtiene una matriz de disimilitud inicial (que contiene la disimilitud entre parejas de series), y luego se usa un algoritmo de agrupamiento convencional para formar los clústers (grupos) con las series. De hecho, la mayoría de los enfoques de agrupamiento de series de tiempo revisados por \cite{liao2005clustering} son variaciones de procedimientos generales como por ejemplo: K-Means, K-Medoids, PAM, CLARA \cite{kaufman1986clustering} o de Clúster jerárquico que utilizan una gama de disimilitudes específicamente diseñadas para tratar con series de tiempo y algunas de sus características. 
+
+Una etapa adicional dentro del análisis consiste en determinar la cantidad de clústers que es más apropiada para los datos. Idealmente, los clústers resultantes no solo deberían tener buenas propiedades estadísticas (compactas, bien separadas, conectadas y estables), sino también resultados relevantes. Se han propuesto una variedad de medidas y métodos para validar los resultados de un análisis clúster y determinar tanto el número de clústers, así como identificar qué algoritmo de agrupamiento ofrece el mejor rendimiento, algunas de estas ellas pueden encontrarse en \cite{fraley1998many}; \cite{duda2001pattern} ; \cite{salvador2004determining} ; \cite{kerr2001bootstrapping}. Esta validación puede basarse únicamente en las propiedades internas de los datos o en alguna referencia externa.
+
+
+
+\newpage
 
 \subsection{Plan de Trabajo}
 
@@ -96,11 +104,13 @@ El plan de trabajo se resume en la Tabla \ref{TablaPlan}.
 \centering
 
 \label{TablaPlan}
-\begin{tabular}{|m{2.4cm}|p{7.4cm}|}
+\begin{tabular}{|m{4cm}|p{10cm}|}
 \hline
 Actividad  & Descripción  \\ \hline
 
-\centering{Obtención de Datos} &  Descarga de Bases de Datos Brasil de las fuentes: 
+Obtención de Datos &  
+
+Descarga de Bases de Datos Brasil de las fuentes: 
 
 \begin{itemize}
 
@@ -109,9 +119,9 @@ Actividad  & Descripción  \\ \hline
 \item Datos de Clima: Climatic Reserch Unit, Departamento de Ciências Atmosféricas (U. São Paulo), e Instituto Nacional de Meteorología de Brasil (INMET)
 \end{itemize}
 
- \\ \hline
+\\ \hline
 
-\centering{Tratamiento de Datos}  &  
+Tratamiento de Datos &  
 
 \begin{itemize}
 \item Depuración de Datos.
@@ -119,13 +129,21 @@ Actividad  & Descripción  \\ \hline
 \item Unificación de Datos para el modelamiento.
 \end{itemize}
 
- \\ \hline
+\\ \hline
 
 
-\centering{Análisis y Modelamiento} &   \\ \hline
+Análisis y Modelamiento &   
 
-\centering{Automatización} &  \\ \hline
-\centering{Conclusiones y Recomendaciones} &  \\ \hline
+\begin{itemize}
+\item Análsis y comparación de métricas y funciones de disimilitud.
+\item Comparación de distintos algoritmos de Clusterización.
+\item Validación del Análisis.
+\end{itemize}
+
+\\ \hline
+
+Automatización & Identificación de parámetros escenciales del análisis clúster de las series de tiempo de caudales, y luego automatizar dicho análisis mediante su programación en el software estadístico R.  \\ \hline
+Conclusiones y Recomendaciones &  \\ \hline
 \end{tabular}
 \caption{Plan de Trabajo}
 \end{table}
@@ -139,7 +157,7 @@ A continuación se muestra el cronograma de actividades planificadas resumidas e
 \begin{table}[h!]
 \centering
 \label{Cronograma}
-\begin{tabular}{|m{2.5cm} *{5}{|m{0.95cm}}|}
+\begin{tabular}{|m{4cm} *{5}{|m{1cm}}|}
 \hline
        & Abril   & Mayo   & Junio   & Julio & Agosto  \\ \hline
 Obtención de Datos   & \centering{X}  &  \centering{X} &   &  &  \\ \hline
