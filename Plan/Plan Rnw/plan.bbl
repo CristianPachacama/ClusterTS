@@ -1,0 +1,68 @@
+\begin{thebibliography}{}
+
+\bibitem[Caiado et~al., 2006]{caiado2006periodogram}
+Caiado, J., Crato, N., and Pe{\~n}a, D. (2006).
+\newblock A periodogram-based metric for time series classification.
+\newblock {\em Computational Statistics \& Data Analysis}, 50(10):2668--2684.
+
+\bibitem[Chouakria and Nagabhushan, 2007]{chouakria2007adaptive}
+Chouakria, A.~D. and Nagabhushan, P.~N. (2007).
+\newblock Adaptive dissimilarity index for measuring time series proximity.
+\newblock {\em Advances in Data Analysis and Classification}, 1(1):5--21.
+
+\bibitem[Duda et~al., 2001]{duda2001pattern}
+Duda, R.~O., Hart, P.~E., Stork, D.~G., et~al. (2001).
+\newblock Pattern classification.
+\newblock {\em International Journal of Computational Intelligence and
+  Applications}, 1:335--339.
+
+\bibitem[Fraley and Raftery, 1998]{fraley1998many}
+Fraley, C. and Raftery, A.~E. (1998).
+\newblock How many clusters? which clustering method? answers via model-based
+  cluster analysis.
+\newblock {\em The computer journal}, 41(8):578--588.
+
+\bibitem[Fu, 2011]{fu2011review}
+Fu, T.-c. (2011).
+\newblock A review on time series data mining.
+\newblock {\em Engineering Applications of Artificial Intelligence},
+  24(1):164--181.
+
+\bibitem[Galeano and Pe{\~n}a, 2000]{galeano2000multivariate}
+Galeano, P. and Pe{\~n}a, D.~P. (2000).
+\newblock Multivariate analysis in vector time series.
+\newblock {\em Resenhas do Instituto de Matem{\'a}tica e Estat{\'\i}stica da
+  Universidade de S{\~a}o Paulo}, 4(4):383--403.
+
+\bibitem[Kaufman and Rousseeuw, 1986]{kaufman1986clustering}
+Kaufman, L. and Rousseeuw, P.~J. (1986).
+\newblock Clustering large data sets.
+\newblock In {\em Pattern Recognition in Practice, Volume II}, pages 425--437.
+  Elsevier.
+
+\bibitem[Kerr and Churchill, 2001]{kerr2001bootstrapping}
+Kerr, M.~K. and Churchill, G.~A. (2001).
+\newblock Bootstrapping cluster analysis: assessing the reliability of
+  conclusions from microarray experiments.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  98(16):8961--8965.
+
+\bibitem[Liao, 2005]{liao2005clustering}
+Liao, T.~W. (2005).
+\newblock Clustering of time series data—a survey.
+\newblock {\em Pattern recognition}, 38(11):1857--1874.
+
+\bibitem[Salvador and Chan, 2004]{salvador2004determining}
+Salvador, S. and Chan, P. (2004).
+\newblock Determining the number of clusters/segments in hierarchical
+  clustering/segmentation algorithms.
+\newblock In {\em Tools with Artificial Intelligence, 2004. ICTAI 2004. 16th
+  IEEE International Conference on}, pages 576--584. IEEE.
+
+\bibitem[Struzik and Siebes, 1999]{struzik1999haar}
+Struzik, Z.~R. and Siebes, A. (1999).
+\newblock The haar wavelet transform in the time series similarity paradigm.
+\newblock In {\em European Conference on Principles of Data Mining and
+  Knowledge Discovery}, pages 12--22. Springer.
+
+\end{thebibliography}

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.26)  26 MAY 2018 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.26)  27 MAY 2018 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Plan.tex
-(./Plan.tex
+**plan.tex
+(./plan.tex
 LaTeX2e <2018-04-01> patch level 4
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -22,10 +22,53 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip43
+\fb@frw=\dimen105
+\fb@frh=\dimen106
+\FrameRule=\dimen107
+\FrameSep=\dimen108
+)
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 )
 (/home/cristian/.TinyTeX/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/05/10 3.21 The Babel package
@@ -56,14 +99,14 @@ Language: nil 2018/05/10 3.21 Nil language
 (/home/cristian/.TinyTeX/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/05/10 3.21 Babel common definitions
 \babel@savecnt=\count88
-\U@D=\dimen103
+\U@D=\dimen109
 
 (/home/cristian/.TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count89
 )))
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip43
+\@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -71,12 +114,12 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen104
+\@emptytoks=\toks17
+\ex@=\dimen110
 ))
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen105
+\pmbraise@=\dimen111
 )
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
@@ -93,7 +136,7 @@ LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen106
+\big@size=\dimen112
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count95
@@ -101,21 +144,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \dotsspace@=\muskip10
 \c@parentequation=\count97
 \dspbrk@lvl=\count98
-\tag@help=\toks17
+\tag@help=\toks18
 \row@=\count99
 \column@=\count100
 \maxfields@=\count101
-\andhelp@=\toks18
-\eqnshift@=\dimen107
-\alignsep@=\dimen108
-\tagshift@=\dimen109
-\tagwidth@=\dimen110
-\totwidth@=\dimen111
-\lineht@=\dimen112
-\@envbody=\toks19
-\multlinegap=\skip44
-\multlinetaggap=\skip45
-\mathdisplay@stack=\toks20
+\andhelp@=\toks19
+\eqnshift@=\dimen113
+\alignsep@=\dimen114
+\tagshift@=\dimen115
+\tagwidth@=\dimen116
+\totwidth@=\dimen117
+\lineht@=\dimen118
+\@envbody=\toks20
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -128,30 +171,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-)
-(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
-)
-(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-
-(/home/cristian/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen113
-\Gin@req@width=\dimen114
 )
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
@@ -169,51 +188,51 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count102
 \Gm@cntv=\count103
 \c@Gm@tempcnt=\count104
-\Gm@bindingoffset=\dimen115
-\Gm@wd@mp=\dimen116
-\Gm@odd@mp=\dimen117
-\Gm@even@mp=\dimen118
-\Gm@layoutwidth=\dimen119
-\Gm@layoutheight=\dimen120
-\Gm@layouthoffset=\dimen121
-\Gm@layoutvoffset=\dimen122
+\Gm@bindingoffset=\dimen119
+\Gm@wd@mp=\dimen120
+\Gm@odd@mp=\dimen121
+\Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
 \Gm@dimlist=\toks22
 )
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen123
-\lightrulewidth=\dimen124
-\cmidrulewidth=\dimen125
-\belowrulesep=\dimen126
-\belowbottomsep=\dimen127
-\aboverulesep=\dimen128
-\abovetopsep=\dimen129
-\cmidrulesep=\dimen130
-\cmidrulekern=\dimen131
-\defaultaddspace=\dimen132
+\heavyrulewidth=\dimen127
+\lightrulewidth=\dimen128
+\cmidrulewidth=\dimen129
+\belowrulesep=\dimen130
+\belowbottomsep=\dimen131
+\aboverulesep=\dimen132
+\abovetopsep=\dimen133
+\cmidrulesep=\dimen134
+\cmidrulekern=\dimen135
+\defaultaddspace=\dimen136
 \@cmidla=\count105
 \@cmidlb=\count106
-\@aboverulesep=\dimen133
-\@belowrulesep=\dimen134
+\@aboverulesep=\dimen137
+\@belowrulesep=\dimen138
 \@thisruleclass=\count107
 \@lastruleclass=\count108
-\@thisrulewidth=\dimen135
+\@thisrulewidth=\dimen139
 )
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip46
+\multirow@colwidth=\skip47
 \multirow@cntb=\count109
-\multirow@dima=\skip47
-\bigstrutjot=\dimen136
+\multirow@dima=\skip48
+\bigstrutjot=\dimen140
 )
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
-\col@sep=\dimen137
+\col@sep=\dimen141
 \ar@mcellbox=\box28
-\extrarowheight=\dimen138
+\extrarowheight=\dimen142
 \NC@list=\toks23
-\extratabsurround=\skip48
-\backup@length=\skip49
+\extratabsurround=\skip49
+\backup@length=\skip50
 \ar@cellbox=\box29
 )
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/tocbibind/tocbibind.sty
@@ -275,7 +294,7 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen139
+\@linkdim=\dimen143
 \Hy@linkcounter=\count110
 \Hy@pagecounter=\count111
 
@@ -303,10 +322,10 @@ Package hyperref Info: Bookmarks ON on input line 4762.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen140
+\XeTeXLinkMargin=\dimen144
 \Fld@menulength=\count114
-\Field@Width=\dimen141
-\Fld@charsize=\dimen142
+\Field@Width=\dimen145
+\Fld@charsize=\dimen146
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -332,26 +351,28 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip50
+\Hy@SectionHShift=\skip51
 )
-(./Plan.aux)
-\openout1 = `Plan.aux'.
+(/home/cristian/.TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+) (./plan.aux)
+\openout1 = `plan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -404,7 +425,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 71.
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -413,110 +434,110 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count120
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
 
-(./Plan.out) (./Plan.out)
+(./plan.out) (./plan.out)
 \@outlinefile=\write3
-\openout3 = `Plan.out'.
+\openout3 = `plan.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 73.
 
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 
 (/home/cristian/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (3.55403pt too wide) in paragraph at lines 46--46
+Overfull \hbox (3.55403pt too wide) in paragraph at lines 94--94
 []\OT1/cmr/bx/n/14.4 INFORMACI[]ON DEL TRABAJO DE TITULACI[]ON 
  []
 
 [1
 
 {/home/cristian/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (8.35658pt too wide) in paragraph at lines 69--70
+Overfull \hbox (8.35658pt too wide) in paragraph at lines 117--118
 \OT1/cmr/m/n/10 sistemas hidricos m^^Sas grandes y complejos del mundo, por lo 
 que al estudiar su comportamiento
  []
 
 [2]
-Overfull \hbox (0.84737pt too wide) in paragraph at lines 91--92
+Overfull \hbox (0.84737pt too wide) in paragraph at lines 139--140
 \OT1/cmr/m/n/10 [[]]). Estos enfoques basados en caracter^^S^^Psticas tienen co
 mo
  []
 
 
-Overfull \hbox (3.0231pt too wide) in paragraph at lines 91--92
+Overfull \hbox (3.0231pt too wide) in paragraph at lines 139--140
 \OT1/cmr/m/n/10 objetivo representar la estructura din^^Samica de cada serie me
 diante un vector de caracter^^S^^Psticas
  []
 
 
-Overfull \hbox (22.18077pt too wide) in paragraph at lines 95--96
+Overfull \hbox (22.18077pt too wide) in paragraph at lines 143--144
 \OT1/cmr/m/n/10 pueden encontrarse en [[]]; [[]] ; [[]]
  []
 
 [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 119.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 167.
 
  (/home/cristian/.TinyTeX/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 167.
 
-Underfull \hbox (badness 1776) in paragraph at lines 120--121
+Underfull \hbox (badness 1776) in paragraph at lines 168--169
 \OT1/cmr/m/n/10 (NOAA), Global Climate Observing System (GCOS)y
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 140--141
+Underfull \hbox (badness 4660) in paragraph at lines 188--189
 []\OT1/cmr/m/n/10 An^^Salsis y comparaci^^Son de m^^Setricas y funciones de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
 []|\OT1/cmr/m/n/10 Conclusiones y
  []
 
 
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 109--150
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 157--198
  [][] 
  []
 
 
-Overfull \hbox (1.88066pt too wide) in paragraph at lines 164--164
+Overfull \hbox (1.88066pt too wide) in paragraph at lines 212--212
 []|\OT1/cmr/m/n/10 Agosto| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 []|\OT1/cmr/m/n/10 Conclusiones y
  []
 
-[4] (./Plan.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
+[4] (./plan.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
- (./Plan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
-Package rerunfilecheck Info: File `Plan.out' has not changed.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+ (./plan.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
+Package rerunfilecheck Info: File `plan.out' has not changed.
 (rerunfilecheck)             Checksum: C768B05A9B1D8B32F6E49047E2E85081;845.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 6873 strings out of 494590
- 98869 string characters out of 6177483
- 204170 words of memory out of 5000000
- 10370 multiletter control sequences out of 15000+600000
+ 7011 strings out of 494590
+ 100983 string characters out of 6177483
+ 207582 words of memory out of 5000000
+ 10492 multiletter control sequences out of 15000+600000
  11849 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,10n,28p,1324b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,11n,28p,1324b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></home/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </home/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -524,7 +545,7 @@ home/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></ho
 me/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home
 /cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/
 cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Plan.pdf (5 pages, 117564 bytes).
+Output written on plan.pdf (5 pages, 117630 bytes).
 PDF statistics:
  156 PDF objects out of 1000 (max. 8388607)
  140 compressed objects within 2 object streams
