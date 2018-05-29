@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Box et~al., 2015]{box2015time}
+Box, G.~E., Jenkins, G.~M., Reinsel, G.~C., and Ljung, G.~M. (2015).
+\newblock {\em Time series analysis: forecasting and control}.
+\newblock John Wiley \& Sons.
+
 \bibitem[Caiado et~al., 2006]{caiado2006periodogram}
 Caiado, J., Crato, N., and Pe{\~n}a, D. (2006).
 \newblock A periodogram-based metric for time series classification.

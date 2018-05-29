@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.26)  29 MAY 2018 02:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.26)  29 MAY 2018 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -514,10 +514,10 @@ Package rerunfilecheck Info: File `Plan.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 6872 strings out of 494590
- 98846 string characters out of 6177483
- 204170 words of memory out of 5000000
- 10369 multiletter control sequences out of 15000+600000
+ 6874 strings out of 494590
+ 98875 string characters out of 6177483
+ 204218 words of memory out of 5000000
+ 10370 multiletter control sequences out of 15000+600000
  11849 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  28i,10n,28p,1324b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -528,10 +528,10 @@ home/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></ho
 me/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home
 /cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/
 cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Plan.pdf (5 pages, 118498 bytes).
+Output written on Plan.pdf (5 pages, 119122 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 155 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

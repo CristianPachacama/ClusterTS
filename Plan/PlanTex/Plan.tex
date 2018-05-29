@@ -103,7 +103,7 @@ Una vez que se determina la medida de disimilitud, se obtiene una matriz de disi
 Una etapa adicional dentro del análisis clúster consiste en determinar la cantidad de clústers que es más apropiada para los datos. Idealmente, los clústers resultantes no solo deberían tener buenas propiedades estadísticas (compactas, bien separadas, conectadas y estables), sino también resultados relevantes. Se han propuesto una variedad de medidas y métodos para validar los resultados de un análisis clúster y determinar tanto el número de clústers, así como identificar qué algoritmo de agrupamiento ofrece el mejor rendimiento, algunas de estas ellas pueden encontrarse en \cite{fraley1998many}; \cite{duda2001pattern} ; \cite{salvador2004determining} ; \cite{kerr2001bootstrapping}. Esta validación puede basarse únicamente en las propiedades internas de los datos o en alguna referencia externa.
 
 Posteriormente se procede al modelamiento SARIMAX de los caudales usando además variables micro y macro climáticas que podrían explicar de mejor manera el comportamiento de estos caudales, cabe mencionar que se modelara únicamente un caudal por cada clúster (grupo).
-Los modelos SARIMAX son modelos SARIMA (Seasonal Autoregressive Integrated Moving Average) que incluye variables exógenas. Es decir, compone un modelo de regresión ordinario que usa variables exógenas en el modelo SARIMA que se usa para estudiar series de tiempo estacionales.
+El modelo SARIMAX propuesto en \cite{box2015time} es un modelo SARIMA (Seasonal Autoregressive Integrated Moving Average) que incluye variables exógenas. Es decir, compone un modelo de regresión ordinario que usa variables exógenas en el modelo SARIMA que se usa para estudiar series de tiempo estacionales.
 
 %\newpage
 
