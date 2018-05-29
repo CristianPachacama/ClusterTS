@@ -60,20 +60,28 @@ En ese contexto, notamos que es posible disminuir la dimensión del problema a t
 
 
 \subsection{Justificación}
-Ya que el problema se basa en identificar grupos de ríos cuyos Caudales se comportan de manera similar en el tiempo, se propone la utilización de el “Análisis Clúster de Series de Tiempo”, que es una técnica de agrupamiento que considera una función de “disimilitud” entre las series de tiempo (que mide que tan distintas son un par de series) y a partir de ella crea grupos de series, cada grupo contiene series de tiempo “parecidas”. Al elegir adecuadamente la función de disimilitud (diseñada para series de tiempo) es posible agrupar a los ríos en grupos basados en el comportamiento temporal de sus caudales. Esto con la finalidad de lidiar con la complejidad que supone análizar la enorme cantidad de series de tiempo de caudales, pasando de analizar alrededor de 150 series a unas pocas (una serie por Clúster), sin dejar de lado la estructura y comportamiento estacional de cada una de ellas, partiendo de una adecuada elección de la función de disimilitud.
+Ya que el problema se basa en identificar grupos de ríos cuyos Caudales se comportan de manera similar en el tiempo, se propone la utilización de el “Análisis Clúster de Series de Tiempo”, que es una técnica de agrupamiento que considera una función de “disimilitud” entre las series de tiempo (que mide que tan distintas son un par de series) y a partir de ella crea grupos de series, cada grupo contiene series de tiempo “parecidas”. Al elegir adecuadamente la función de disimilitud (diseñada para series de tiempo) es posible agrupar a los ríos en grupos basados en el comportamiento temporal de sus caudales. Esto con la finalidad de lidiar con la complejidad que supone analizar y modelar esta enorme cantidad de series de tiempo de caudales, pasando de analizar alrededor de 150 series a unas pocas (una serie por Clúster), sin dejar de lado la estructura y comportamiento estacional de cada una de ellas, partiendo de una adecuada elección de la función de disimilitud.
 
-\subsection{Hipótesis}
+Hay que destacar que el modelamiento de caudales juega un rol trascendental en la creación de políticas que adopta sector energético de Brasil, que como mencionamos anteriormente está alimentado en su mayoría por el sector hidroeléctrico en donde el análisis que planteamos permitirá profundizar en la planificación de las operaciones de plantas hidroeléctricas que depende directamente del comportamiento temporal de los ríos que las alimentan, esta planificación podría evitar por ejemplo eventos de déficit energético provocados por una deficiencia estructural de la disponibilidad de energía, que a la larga tiene impactos económicos y sociales mayores que los cortes de energía.
+
+%El déficit de energía se debe a una deficiencia estructural de la disponibilidad de energía. Tiene impactos económicos y sociales mayores que las interrupciones de energía aisladas y en el caso de la energía hidroeléctrica este déficit es causado por la falta de energía almacenada en los embalses, debido a la ocurrencia de eventos hidrológicos críticos o fallas de inversión en la expansión para satisfacer la demanda crecimiento.
+
+%\subsection{Hipótesis}
 
 
 \subsection{Objetivo General}
-El principal objetivo del proyecto es el de agrupar estaciones (asociadas a ríos en Brasil) en zonas, basandonos en el comportamiento temporal del caudal de los rios que se mide diariamente en dichas estaciones, a fin de facilitar el modelamiento de los cuadales de al rededor de 150 estaciones repartidas en todo Brasil, que como sabemos posee uno de los sistemas hidricos más grandes y complejos del mundo, por lo que al estudiar su comportamiento es posible escalarlo y adaptarlo a sistemas menos complejos como el de nuestro país.
+El principal objetivo del proyecto es utilizar el Análissi Clúster para agrupar estaciones (asociadas a ríos en Brasil), basandonos en el comportamiento temporal del caudal de los rios que se mide en dichas estaciones, y posteriormente modelar los caudales (1 por clúster) usando variables micro y macro climáticas.
+
+%a fin de facilitar el modelamiento de los cuadales de al rededor de 150 estaciones repartidas en todo Brasil, que como sabemos posee uno de los sistemas hidricos más grandes y complejos del mundo, por lo que al estudiar su comportamiento es posible escalarlo y adaptarlo a sistemas menos complejos como el de nuestro país.
 
 \subsection{Objetivos Específicos}
 \begin{enumerate}
 
-\item Comparar una gama de técnicas tanto de clusterización, así como la elección de distintas métricas o funciones de disimilitud a fin de identificar aquella combinación (disimilitud/algotimo de clusterización) que permita un adecuado agrupamiento de las series de tiempo asociadas al Caudal de los ríos, que tienen la peculiaridad de que las series estan conformadas por observaciones diarias de los caudales y además suelen ser series estacionales, y este tipo de series no han sido analizadas con esta técnica previamente.
+\item Comparar una gama de técnicas tanto de clusterización, así como la elección de distintas métricas o funciones de disimilitud a fin de identificar aquella combinación (disimilitud/algotimo de clusterización) que permita un adecuado agrupamiento de las series de tiempo asociadas a los caudales de los principales ríos de Brasil, que tienen la peculiaridad de que dichas series son usualmente estacionales, y este tipo de series no han sido analizadas con esta técnica previamente.
 
-\item Comparar el modelamiento de estas series de tiempo usando el análisis cluster versus el modelamiento sin un previo análisis, a fin de mostrar las ventajas en cuanto a tiempo y eficiencia de la metodología planteada.
+\item Comparar el modelamiento de estas series de tiempo usando el análisis cluster versus el modelamiento sin un previo análisis, a fin de validar la metodología de clústerización planteada, y además mostrar posibles ventajas en cuanto a tiempo y eficiencia de la metodología planteada.
+
+\item Encontrar los factores determinantes del nivel de caudal para cada clúster y comparar como varían sus efectos entre uno clúster y otro.
 
 \item Automatizar la descomposición y Análisis Clúster de series de tiempo de Caudales a través de la utilización de software estadístico y programación.
 
@@ -92,11 +100,12 @@ De esta manera, diferentes enfoques para definir una función de disimilitud ent
 
 Una vez que se determina la medida de disimilitud, se obtiene una matriz de disimilitud inicial (que contiene la disimilitud entre parejas de series), y luego se usa un algoritmo de agrupamiento convencional para formar los clústers (grupos) con las series. De hecho, la mayoría de los enfoques de agrupamiento de series de tiempo revisados por \cite{liao2005clustering} son variaciones de procedimientos generales como por ejemplo: K-Means, K-Medoids, PAM, CLARA \cite{kaufman1986clustering} o de Clúster jerárquico que utilizan una gama de disimilitudes específicamente diseñadas para tratar con series de tiempo y algunas de sus características. 
 
-Una etapa adicional dentro del análisis consiste en determinar la cantidad de clústers que es más apropiada para los datos. Idealmente, los clústers resultantes no solo deberían tener buenas propiedades estadísticas (compactas, bien separadas, conectadas y estables), sino también resultados relevantes. Se han propuesto una variedad de medidas y métodos para validar los resultados de un análisis clúster y determinar tanto el número de clústers, así como identificar qué algoritmo de agrupamiento ofrece el mejor rendimiento, algunas de estas ellas pueden encontrarse en \cite{fraley1998many}; \cite{duda2001pattern} ; \cite{salvador2004determining} ; \cite{kerr2001bootstrapping}. Esta validación puede basarse únicamente en las propiedades internas de los datos o en alguna referencia externa.
+Una etapa adicional dentro del análisis clúster consiste en determinar la cantidad de clústers que es más apropiada para los datos. Idealmente, los clústers resultantes no solo deberían tener buenas propiedades estadísticas (compactas, bien separadas, conectadas y estables), sino también resultados relevantes. Se han propuesto una variedad de medidas y métodos para validar los resultados de un análisis clúster y determinar tanto el número de clústers, así como identificar qué algoritmo de agrupamiento ofrece el mejor rendimiento, algunas de estas ellas pueden encontrarse en \cite{fraley1998many}; \cite{duda2001pattern} ; \cite{salvador2004determining} ; \cite{kerr2001bootstrapping}. Esta validación puede basarse únicamente en las propiedades internas de los datos o en alguna referencia externa.
 
+Posteriormente se procede al modelamiento SARIMAX de los caudales usando además variables micro y macro climáticas que podrían explicar de mejor manera el comportamiento de estos caudales, cabe mencionar que se modelara únicamente un caudal por cada clúster (grupo).
+Los modelos SARIMAX son modelos SARIMA (Seasonal Autoregressive Integrated Moving Average) que incluye variables exógenas. Es decir, compone un modelo de regresión ordinario que usa variables exógenas en el modelo SARIMA que se usa para estudiar series de tiempo estacionales.
 
-
-\newpage
+%\newpage
 
 \subsection{Plan de Trabajo}
 
@@ -123,6 +132,11 @@ Descarga de Bases de Datos Brasil de las fuentes:
 
 \\ \hline
 
+
+Análisis Preliminar &  Estudio teórico de modelos a fin de identificar mejores técnicas que puedan usarse dentro de la metodología planteada.
+\\ \hline
+
+
 Tratamiento de Datos &  
 
 \begin{itemize}
@@ -140,6 +154,7 @@ Análisis y Modelamiento &
 \item Análsis y comparación de métricas y funciones de disimilitud.
 \item Comparación de distintos algoritmos de Clusterización.
 \item Validación del Análisis.
+\item Modelamiento SARIMAX del caudal a partir de variables micro y macro climáticas (un modelo por clúster).
 \end{itemize}
 
 \\ \hline

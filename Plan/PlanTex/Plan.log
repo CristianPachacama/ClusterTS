@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.26)  28 MAY 2018 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.26)  29 MAY 2018 02:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -438,85 +438,89 @@ Overfull \hbox (3.55403pt too wide) in paragraph at lines 46--46
 [1
 
 {/home/cristian/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (8.35658pt too wide) in paragraph at lines 69--70
-\OT1/cmr/m/n/10 sistemas hidricos m^^Sas grandes y complejos del mundo, por lo 
-que al estudiar su comportamiento
+Overfull \hbox (20.74542pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 creaci^^Son de pol^^S^^Pticas que adopta sector energ^^Setico d
+e Brasil, que como mencionamos anteriormente
+ []
+
+
+Overfull \hbox (4.99544pt too wide) in paragraph at lines 65--66
+\OT1/cmr/m/n/10 deficiencia estructural de la disponibilidad de energ^^S^^Pa, q
+ue a la larga tiene impactos econ^^Somicos
  []
 
 [2]
-Overfull \hbox (0.84737pt too wide) in paragraph at lines 91--92
+Overfull \hbox (0.84737pt too wide) in paragraph at lines 99--100
 \OT1/cmr/m/n/10 [[]]). Estos enfoques basados en caracter^^S^^Psticas tienen co
 mo
  []
 
 
-Overfull \hbox (3.0231pt too wide) in paragraph at lines 91--92
+Overfull \hbox (3.0231pt too wide) in paragraph at lines 99--100
 \OT1/cmr/m/n/10 objetivo representar la estructura din^^Samica de cada serie me
 diante un vector de caracter^^S^^Psticas
  []
 
-
-Overfull \hbox (22.18077pt too wide) in paragraph at lines 95--96
-\OT1/cmr/m/n/10 pueden encontrarse en [[]]; [[]] ; [[]]
- []
-
 [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 119.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 128.
 
  (/home/cristian/.TinyTeX/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
 
-Underfull \hbox (badness 1776) in paragraph at lines 120--121
+Underfull \hbox (badness 1776) in paragraph at lines 129--130
 \OT1/cmr/m/n/10 (NOAA), Global Climate Observing System (GCOS)y
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 140--141
+Underfull \hbox (badness 4660) in paragraph at lines 154--155
 []\OT1/cmr/m/n/10 An^^Salsis y comparaci^^Son de m^^Setricas y funciones de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
 []|\OT1/cmr/m/n/10 Conclusiones y
  []
 
 
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 109--150
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 118--165
  [][] 
  []
 
 
-Overfull \hbox (1.88066pt too wide) in paragraph at lines 164--164
+Overfull \hbox (1.88066pt too wide) in paragraph at lines 179--179
 []|\OT1/cmr/m/n/10 Agosto| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--169
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
 []|\OT1/cmr/m/n/10 Conclusiones y
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [4] (./Plan.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
  (./Plan.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
 Package rerunfilecheck Info: File `Plan.out' has not changed.
-(rerunfilecheck)             Checksum: C768B05A9B1D8B32F6E49047E2E85081;845.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+(rerunfilecheck)             Checksum: C462940C09D4069F72C3E1C692039706;783.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
  ) 
 Here is how much of TeX's memory you used:
- 6873 strings out of 494590
- 98869 string characters out of 6177483
+ 6872 strings out of 494590
+ 98846 string characters out of 6177483
  204170 words of memory out of 5000000
- 10370 multiletter control sequences out of 15000+600000
+ 10369 multiletter control sequences out of 15000+600000
  11849 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 28i,10n,28p,1324b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,10n,28p,1324b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></home/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </home/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -524,10 +528,10 @@ home/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></ho
 me/cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home
 /cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/
 cristian/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Plan.pdf (5 pages, 117529 bytes).
+Output written on Plan.pdf (5 pages, 118498 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
+ 153 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  41 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
