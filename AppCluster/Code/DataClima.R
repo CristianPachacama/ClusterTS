@@ -19,14 +19,3 @@ dygraphs::dygraph(BDDtsc[,1:3]) %>%
               highlightSeriesOpts = list(strokeWidth = 1.5))
 
 
-#Grafico Conjunto de Vazoe y Clima (Percip, Temp)
-
-BDDcons = cbind(BDDv[829:1020,c(3,4)],BDDc[,4])
-BDDcons = ts(BDDcons,start = c(2000,1),frequency = 12)
-dygraphs::dygraph(BDDcons[,1:3]) %>% 
-  dyRangeSelector(dateWindow = c("2000-01-01", "2015-12-01"))%>%
-  dyHighlight(highlightCircleSize = 5, 
-              highlightSeriesBackgroundAlpha = 0.6,
-              hideOnMouseOut = FALSE,
-              highlightSeriesOpts = list(strokeWidth = 1.5))
-
