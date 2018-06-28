@@ -17,5 +17,5 @@ dygraphs::dygraph(BDDtsc[,1:3]) %>%
               highlightSeriesBackgroundAlpha = 0.6,
               hideOnMouseOut = FALSE,
               highlightSeriesOpts = list(strokeWidth = 1.5))
-
+ 
 
