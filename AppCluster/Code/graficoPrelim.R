@@ -24,5 +24,5 @@ dygraphs::dygraph(BDDtsv[,1:3]) %>%
               highlightSeriesOpts = list(strokeWidth = 1.5))
 
 
-
-
+getwd()
+save(BDDv,BDDtsv,file = "Data/DataVazoes.RData")

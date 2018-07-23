@@ -21,7 +21,7 @@ dist_vaz = function(vazoes_dat,clima_dat){
   return(D)
 }
 
-#Quitar vazoes con NA's 
+#Quitar vazoes con NA's !!!!
 vazoes_dat2=vazoes_dat[!is.na(vazoes_dat$Latitud),]
 
 #Distancias mínimas hacia Vazoes
