@@ -22,20 +22,115 @@ DistMatrix = function(BDD=BDDv,Metrica= "acf"){
   
 }
   
+#Funcion Extra ------
+cluster_geografico = function(D,k=4,tipo='kmedias',vazoes_code){
+  k_aux<-k
+  map <- smacofSym(D)
+  fit <- switch(tipo,
+                'kmedias' = {kmeans(map$conf, centers = k_aux)},
+                'clara' = {clara(map$conf, k=k_aux, samples = 50, stand=TRUE, pamLike = TRUE)},
+                'gerarquico' = {hclust(D)}
+  )
+  grupo <- switch (tipo,
+                   'kmedias' = {fit$cluster},
+                   'clara' = {fit$cluster},
+                   'gerarquico' = {cutree(fit, k = k_aux)}
+  )
+  D1<-as.numeric(map$conf[,'D1']);
+  D2<-as.numeric(map$conf[,'D2']);
   
+  BDD_cluster<-data.frame(Nombre_ST = paste0('VAZOES(',vazoes_code$Estacion,')'),
+                          Estacion=vazoes_code$Estacion,
+                          Codigo_ONS=vazoes_code$Codigo_ONS,
+                          Latitud=vazoes_code$Latitud,
+                          Longitud=vazoes_code$Longitud,
+                          D1, D2, Cluster=as.factor(as.character(grupo))
+  )
+  
+  BDD_cluster<-data.frame(Nombre_ST = paste0('VAZOES(',vazoes_code$Estacion,')'),
+                          Estacion=vazoes_code$Estacion,
+                          Codigo_ONS=vazoes_code$Codigo_ONS,
+                          Latitud=vazoes_code$Latitud,
+                          Longitud=vazoes_code$Longitud,
+                          D1, D2, Cluster=as.factor(as.character(grupo))
+  )
+  if(k_aux >= 1){
+    est_cluster1<-as.character(BDD_cluster$Nombre_ST[BDD_cluster$Cluster==1])
+  }
+  if(k_aux >=2){
+    est_cluster2<-as.character(BDD_cluster$Nombre_ST[BDD_cluster$Cluster==2])
+  }
+  if(k_aux >=3){
+    est_cluster3<-as.character(BDD_cluster$Nombre_ST[BDD_cluster$Cluster==3])
+  }
+  if(k_aux >=4){
+    est_cluster4<-as.character(BDD_cluster$Nombre_ST[BDD_cluster$Cluster==4])
+  }
+  if(k_aux >=5){
+    est_cluster5<-as.character(BDD_cluster$Nombre_ST[BDD_cluster$Cluster==5])
+  }
+  if(k_aux >=6){
+    est_cluster6<-as.character(BDD_cluster$Nombre_ST[BDD_cluster$Cluster==6])
+  }
+  if(k_aux >=7){
+    est_cluster7<-as.character(BDD_cluster$Nombre_ST[BDD_cluster$Cluster==7])
+  }
+  if(k_aux>=8){
+    est_cluster8<-as.character(BDD_cluster$Nombre_ST[BDD_cluster$Cluster==8])
+  }
+  if(k_aux > 8){
+    print('Valor de k demasiado grande, elige un menor número de clusters')
+  }
+  
+  resultado <- switch (k_aux,
+                       {list('map'=map,'grupo'=grupo,'BDD_cluster'=BDD_cluster,
+                             'est_cluster1' = est_cluster1)},
+                       {list('map'=map,'grupo'=grupo,'BDD_cluster'=BDD_cluster,
+                             'est_cluster1' = est_cluster1,'est_cluster2' = est_cluster2)},
+                       {list('map'=map,'grupo'=grupo,'BDD_cluster'=BDD_cluster,
+                             'est_cluster1' = est_cluster1,'est_cluster2' = est_cluster2,
+                             'est_cluster3' = est_cluster3)},
+                       {list('map'=map,'grupo'=grupo,'BDD_cluster'=BDD_cluster,
+                             'est_cluster1' = est_cluster1,'est_cluster2' = est_cluster2,
+                             'est_cluster3' = est_cluster3,'est_cluster4' = est_cluster4)},
+                       {list('map'=map,'grupo'=grupo,'BDD_cluster'=BDD_cluster,
+                             'est_cluster1' = est_cluster1,'est_cluster2' = est_cluster2,
+                             'est_cluster3' = est_cluster3,'est_cluster4' = est_cluster4,
+                             'est_cluster5' = est_cluster5)},
+                       {list('map'=map,'grupo'=grupo,'BDD_cluster'=BDD_cluster,
+                             'est_cluster1' = est_cluster1,'est_cluster2' = est_cluster2,
+                             'est_cluster3' = est_cluster3,'est_cluster4' = est_cluster4,
+                             'est_cluster5' = est_cluster5,'est_cluster6' = est_cluster6)},
+                       {list('map'=map,'grupo'=grupo,'BDD_cluster'=BDD_cluster,
+                             'est_cluster1' = est_cluster1,'est_cluster2' = est_cluster2,
+                             'est_cluster3' = est_cluster3,'est_cluster4' = est_cluster4,
+                             'est_cluster5' = est_cluster5,'est_cluster6' = est_cluster6,
+                             'est_cluster7' = est_cluster7)},
+                       {list('map'=map,'grupo'=grupo,'BDD_cluster'=BDD_cluster,
+                             'est_cluster1' = est_cluster1,'est_cluster2' = est_cluster2,
+                             'est_cluster3' = est_cluster3,'est_cluster4' = est_cluster4,
+                             'est_cluster5' = est_cluster5,'est_cluster6' = est_cluster6,
+                             'est_cluster7' = est_cluster7,'est_cluster8' = est_cluster8)}
+  )
+  
+  return(resultado)
+  
+}
+
+#Genera Data para Mapa ---------
 clus_dat<-eventReactive(input$vaz_clus_boton,{
   D_aux <- switch(input$vaz_clus_metric,
-                  'D_ccor'=DistMatrix(BDDv,Metrica = 'ccor'),
-                  'D_cor'=DistMatrix(BDDv,Metrica = 'cor'),
-                  'D_cort'=DistMatrix(BDDv,Metrica = 'cort'),
-                  'D_acf'=DistMatrix(BDDv,Metrica = 'acf'),
-                  'D_euc'=DistMatrix(BDDv,Metrica = 'euc'),
-                  'D_fourier'=DistMatrix(BDDv,Metrica = 'fourier'),
-                  'D_ifnrm'=DistMatrix(BDDv,Metrica = 'infnorm'),
-                  'D_manh'=DistMatrix(BDDv,Metrica = 'manhattan'),
-                  'D_mink'=DistMatrix(BDDv,Metrica = 'minkowski'),
-                  'D_pacf'=DistMatrix(BDDv,Metrica = 'pacf'),
-                  'D_per'=DistMatrix(BDDv,Metrica = 'per')
+                  'D_ccor'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'ccor'),
+                  'D_cor'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'cor'),
+                  'D_cort'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'cort'),
+                  'D_acf'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'acf'),
+                  'D_euc'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'euc'),
+                  'D_fourier'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'fourier'),
+                  'D_ifnrm'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'infnorm'),
+                  'D_manh'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'manhattan'),
+                  'D_mink'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'minkowski'),
+                  'D_pacf'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'pacf'),
+                  'D_per'=DistMatrix(BDDv[c(-1,-2),],Metrica = 'per')
   )
   
   aux_cluster <- cluster_geografico(D=D_aux,k=as.numeric(input$vaz_clus_k),
@@ -108,7 +203,7 @@ output$mapa_cluster <- renderLeaflet({
 output$tabla_cluster <- renderDataTable(server = FALSE,
                                         datatable(filter = 'top',
                                                   options = list(pageLength=7,searchHighlight = TRUE),{
-                                                    aux<-clus_dat()
+                                                    aux<-clus_dat() %>% arrange(Cluster)
                                                     aux[,c(-1,-3)]
                                                   })
 )
@@ -116,7 +211,7 @@ output$tabla_cluster <- renderDataTable(server = FALSE,
 serie_cluster <- eventReactive(input$vaz_clu_grf_boton,{
   est_selec<-input$tabla_cluster_rows_selected
   # aux<-xts(BDD_unificada[,nombres],order.by =as.Date(BDD_unificada[,1]))
-  aux<-vazoes_cluster_ts[,est_selec]
+  aux<-BDDtsv[,est_selec]
   return(aux)
   
 })
@@ -124,7 +219,7 @@ serie_cluster <- eventReactive(input$vaz_clu_grf_boton,{
 output$vaz_clu_grf <- renderDygraph({
   aux<-serie_cluster()
   dygraph(aux)%>% 
-    dyRangeSelector(dateWindow = c('2010-01-01','2015-12-31'))%>%
+    dyRangeSelector(dateWindow = c('2000-01-01','2015-12-31'))%>%
     dyHighlight(highlightSeriesBackgroundAlpha = 0.3)%>%
     dyLegend(width = 400)
 })

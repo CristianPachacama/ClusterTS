@@ -32,6 +32,7 @@ library(htmltools)
 library(rgdal)
 #Tablas
 library(DT)
+library(dplyr)
 #Series de Tiempo
 library(TSdist)
 library(dygraphs)
@@ -41,11 +42,12 @@ library(smacof)
 library(cluster)
 #>> Carga de Datos
 #Data Antigua
-load('Data/Antigua Data/datos_interfaz.RData')
-load('Data/Antigua Data//Vazoes_Cluster.RData')
+# load('Data/Antigua Data/datos_interfaz.RData')
+# load('Data/Antigua Data//Vazoes_Cluster.RData')
 #Nueva Data
-load('Data/DataVazoes.RData')
-
+load('Data/Actual/InterfazMes.RData')
+load('Data/Actual/DataVazoes.RData')
+load("Data/Actual/VazoesCode.RData")
 # ========================================================================
 # !!!!!!!!!!!!!!!!!!!!!!    USER INTERFACE   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # ========================================================================
