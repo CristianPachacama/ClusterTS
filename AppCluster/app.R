@@ -17,7 +17,7 @@
 #Correccion de Version en paquete 'xts' ===============
 # install.packages('devtools', dependencies = T)
 # require(devtools)
-# install_version("xts", version = "0.9-7", repos = "http://cran.us.r-project.org")
+# devtools::install_version("xts", version = "0.9-7", repos = "http://cran.us.r-project.org")
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #---------------   ANALISIS CLUSTER Mensual (Jul 2018)   ------------------
@@ -193,7 +193,7 @@ ui <- navbarPage(title = "Tesis",
                               h3('Mapa de Estaciones Clusterizadas: Vazoes '),hr(),
                               leafletOutput("mapa_cluster",width = "100%",height = "450px"),hr(),
                               h4('Tabla de Estaciones por Cluster'),
-                              fluidRow(dataTableOutput("tabla_cluster",width = "50%")),hr(),
+                              fluidRow(dataTableOutput("tabla_cluster", width = "50%")),hr(),
                               dygraphOutput('vaz_clu_grf')
                             )
                           ),hr()

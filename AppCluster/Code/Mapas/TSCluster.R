@@ -223,3 +223,4 @@ output$vaz_clu_grf <- renderDygraph({
     dyHighlight(highlightSeriesBackgroundAlpha = 0.3)%>%
     dyLegend(width = 400)
 })
+
