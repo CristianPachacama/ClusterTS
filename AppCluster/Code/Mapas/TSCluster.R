@@ -202,10 +202,19 @@ output$mapa_cluster <- renderLeaflet({
 #Tabla de Estaciones por Cluster -----
 output$tabla_cluster <- renderDataTable(server = FALSE,
                                         datatable(filter = 'top',
-                                                  options = list(pageLength=7,searchHighlight = TRUE),{
-                                                    aux<-clus_dat() %>% arrange(Cluster)
-                                                    aux[,c(-1,-3)]
-                                                  })
+                                          extensions = c('Buttons'), #c('Responsive','Buttons'),
+                                          options = list(pageLength=7,searchHighlight = TRUE,
+                                            dom = 'Bfrtip',
+                                            buttons = list('copy','print', list(
+                                              extend = 'collection',
+                                              buttons = c('csv', 'excel', 'pdf'),
+                                              text = 'Descargar'
+                                            ))
+                                          ),
+                                          {
+                                            aux<-clus_dat() %>% arrange(Cluster)
+                                            aux[,c(-1,-3)]
+                                          })
 )
 #Grafico de Series (CLUSTER) ------
 serie_cluster <- eventReactive(input$vaz_clu_grf_boton,{

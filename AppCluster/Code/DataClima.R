@@ -1,14 +1,12 @@
 library(dplyr)
 library(readr)
 library(dygraphs)
+# dir = "Data/Clima Estaciones/Clima csv2"
+# estacionesExist = list.files(dir)
 
-dir = "Data/Clima Estaciones/Clima csv"
-estaciones = list.files(dir)
-
-
-# k=20
+# k=1
 #Clima de la Estacion K-esima
-BDDc = read_delim(paste0(dir,"/",estaciones[k]), 
+BDDc = read_delim(paste0(dir,"/",estacionK), #,".csv"), 
                   ";", escape_double = FALSE, trim_ws = TRUE, 
                   skip = 16)
 

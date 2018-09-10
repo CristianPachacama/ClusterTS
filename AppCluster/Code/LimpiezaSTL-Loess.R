@@ -4,11 +4,11 @@ library(stlplus)
 
 #Carga de Datos de la Estacion  ---------------------------------------------------
 
-k=10 # Estacion de Clima
+# k=10 # Estacion de Clima
 tendWindow = 24 #Retardos Tendencia
 estacioWindow = 12   #Retardos Estacionalidad
 
-source("Code/DataClima.R")
+# source("Code/DataClima.R")
 
 # Quitar Estaciones con mas de 10% deobservaciones perdidas (2000-2015) -----------
 # considerando el max de las 6 variables climaticas??? 

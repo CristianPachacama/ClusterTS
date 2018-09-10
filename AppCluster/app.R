@@ -165,7 +165,7 @@ ui <- navbarPage(title = "Tesis",
                             sidebarPanel(
                               h4('Cluster de Series de Tiempo'),
                               p('Primero selecciona una de las Métricas definidas para series de tiempo.'),
-                              selectInput('vaz_clus_metric', label= 'Selecciona Métrica',selected = 'D_ccor',
+                              selectInput('vaz_clus_metric', label= 'Selecciona Métrica',selected = 'D_acf',
                                           list('Correlación Cruzada'='D_ccor',
                                                'Autocorrelación'='D_acf',
                                                'Correlación de Pearson'='D_cor',

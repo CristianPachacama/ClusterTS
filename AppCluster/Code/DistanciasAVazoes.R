@@ -31,10 +31,10 @@ D =dist_vaz(vazoes_dat2,clima_dat)
 
 #Hallamos Nombres de estaciones de Clima Asociadas
 Clima_min = apply(D,1,function(x) which.min(x))
-Clima_min = names(Clima_min)
+Clima_min = colnames(D)[as.integer(Clima_min)]
 
 
-data.frame(Vazoes = vazoes_dat2, Clima_min)
+BDD_min = data.frame(Estacion = vazoes_dat2$Estacion, Clima_min)
 
 
 
