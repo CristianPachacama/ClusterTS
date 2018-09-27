@@ -36,7 +36,7 @@ Clima_min = colnames(D)[as.integer(Clima_min)]
 
 BDD_min = data.frame(Estacion = vazoes_dat2$Estacion, Clima_min)
 
-
+remove(D,vazoes_dat,vazoes_dat2,clima_dat,Clima_min,resum_NAs,dist_vaz)
 
 
 

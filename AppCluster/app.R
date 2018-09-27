@@ -181,7 +181,7 @@ ui <- navbarPage(title = "Tesis",
                               selectInput('vaz_clus_metod', label= 'Selecciona Método',selected = 'clara',
                                           list('K-Medias'='kmedias','K-Medoid (CLARA)'='clara','Cluster Gerárquico'='gerarquico')),
                               p('Finalmente elige el número de clusters que quieres que se formen.'),
-                              selectInput('vaz_clus_k', label= 'Número de Clusters',c(2:8),selected = 4),
+                              sliderInput('vaz_clus_k', label= 'Número de Clusters', min=2, max=8, value = 4),
                               actionButton('vaz_clus_boton',label='Clusterizar',icon = icon('braille')),hr(),
                               h4('Gráfico de Series'),
                               p('Para graficar una o varias series, primero clusteriza las estaciones, luego

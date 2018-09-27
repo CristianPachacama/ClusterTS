@@ -102,10 +102,14 @@ LimpiezaSTL = function(BDDtsc,fecha0){
 LimBDDtsc= LimpiezaSTL(BDDtsc,fecha0)
 
 # Graficas
-p0 = plot(stlplus(BDDtsc[,4], t.window = tendWindow , s.window = estacioWindow))
-pf = plot(stlplus(LimBDDtsc[,4], t.window = tendWindow , s.window = estacioWindow))
-print(p0)
-print(pf)
+print(plot(stlplus(BDDtsc[,4], t.window = tendWindow , s.window = estacioWindow)))
+print(plot(stlplus(LimBDDtsc[,4], t.window = tendWindow , s.window = estacioWindow)))
+
+
+
+
+#Removemos Variables  ----------------------
+remove(IndVarValid)
 
 
 
