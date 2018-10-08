@@ -4,6 +4,3 @@
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Marco Te\'orico}{2}{chapter.2}
 \contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }a}{3}{chapter.3}
-\contentsline {chapter}{\numberline {4}Conclusiones y recomendaciones}{4}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclusiones}{4}{section.4.1}
-\contentsline {section}{\numberline {4.2}Recomendaciones}{4}{section.4.2}
