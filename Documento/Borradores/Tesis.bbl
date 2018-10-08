@@ -1,0 +1,92 @@
+\begin{thebibliography}{10}
+
+\bibitem{Chaos1996}
+{\sc K.~Alligood, T.~Sauer, and J.~Yorke}, {\em CHAOS: An Introduction to
+  Dynamical Systems}, Springer-Verlag New York, New York, 1996.
+
+\bibitem{box2015time}
+{\sc G.~E. Box, G.~M. Jenkins, G.~C. Reinsel, and G.~M. Ljung}, {\em Time
+  series analysis: forecasting and control}, John Wiley \& Sons, 2015.
+
+\bibitem{caiado2006periodogram}
+{\sc J.~Caiado, N.~Crato, and D.~Pe{\~n}a}, {\em A periodogram-based metric for
+  time series classification}, Computational Statistics \& Data Analysis, 50
+  (2006), pp.~2668--2684.
+
+\bibitem{chouakria2007adaptive}
+{\sc A.~D. Chouakria and P.~N. Nagabhushan}, {\em Adaptive dissimilarity index
+  for measuring time series proximity}, Advances in Data Analysis and
+  Classification, 1 (2007), pp.~5--21.
+
+\bibitem{Chung1990}
+{\sc K.~Chung and R.~Williams}, {\em {Introduction to Stochastic Integrtion}},
+  Birkhäuser, New York, 1990.
+
+\bibitem{datta2003comparisons}
+{\sc S.~Datta and S.~Datta}, {\em Comparisons and validation of statistical
+  clustering techniques for microarray gene expression data}, Bioinformatics,
+  19 (2003), pp.~459--466.
+
+\bibitem{duda2001pattern}
+{\sc R.~O. Duda, P.~E. Hart, D.~G. Stork, et~al.}, {\em Pattern
+  classification}, International Journal of Computational Intelligence and
+  Applications, 1 (2001), pp.~335--339.
+
+\bibitem{fraley1998many}
+{\sc C.~Fraley and A.~E. Raftery}, {\em How many clusters? which clustering
+  method? answers via model-based cluster analysis}, The computer journal, 41
+  (1998), pp.~578--588.
+
+\bibitem{fu2011review}
+{\sc T.-c. Fu}, {\em A review on time series data mining}, Engineering
+  Applications of Artificial Intelligence, 24 (2011), pp.~164--181.
+
+\bibitem{galeano2000multivariate}
+{\sc P.~Galeano and D.~P. Pe{\~n}a}, {\em Multivariate analysis in vector time
+  series}, Resenhas do Instituto de Matem{\'a}tica e Estat{\'\i}stica da
+  Universidade de S{\~a}o Paulo, 4 (2000), pp.~383--403.
+
+\bibitem{kaufman1986clustering}
+{\sc L.~Kaufman and P.~J. Rousseeuw}, {\em Clustering large data sets}, in
+  Pattern Recognition in Practice, Volume II, Elsevier, 1986, pp.~425--437.
+
+\bibitem{kerr2001bootstrapping}
+{\sc M.~K. Kerr and G.~A. Churchill}, {\em Bootstrapping cluster analysis:
+  assessing the reliability of conclusions from microarray experiments},
+  Proceedings of the National Academy of Sciences, 98 (2001), pp.~8961--8965.
+
+\bibitem{Lakshmanan2003}
+{\sc M.~Lakshmanan and S.~Rajasekar}, {\em Nonlinear Dynamics}, Springer-Verlag
+  Berlin Heidelberg, Berlin, 2003.
+
+\bibitem{liao2005clustering}
+{\sc T.~W. Liao}, {\em Clustering of time series data?a survey}, Pattern
+  recognition, 38 (2005), pp.~1857--1874.
+
+\bibitem{salvador2004determining}
+{\sc S.~Salvador and P.~Chan}, {\em Determining the number of clusters/segments
+  in hierarchical clustering/segmentation algorithms}, in Tools with Artificial
+  Intelligence, 2004. ICTAI 2004. 16th IEEE International Conference on, IEEE,
+  2004, pp.~576--584.
+
+\bibitem{struzik1999haar}
+{\sc Z.~R. Struzik and A.~Siebes}, {\em The haar wavelet transform in the time
+  series similarity paradigm}, in European Conference on Principles of Data
+  Mining and Knowledge Discovery, Springer, 1999, pp.~12--22.
+
+\bibitem{tibshirani2005cluster}
+{\sc R.~Tibshirani and G.~Walther}, {\em Cluster validation by prediction
+  strength}, Journal of Computational and Graphical Statistics, 14 (2005),
+  pp.~511--528.
+
+\bibitem{tibshirani2001estimating}
+{\sc R.~Tibshirani, G.~Walther, and T.~Hastie}, {\em Estimating the number of
+  clusters in a data set via the gap statistic}, Journal of the Royal
+  Statistical Society: Series B (Statistical Methodology), 63 (2001),
+  pp.~411--423.
+
+\bibitem{yeung2001validating}
+{\sc K.~Y. Yeung, D.~R. Haynor, and W.~L. Ruzzo}, {\em Validating clustering
+  for gene expression data}, Bioinformatics, 17 (2001), pp.~309--318.
+
+\end{thebibliography}

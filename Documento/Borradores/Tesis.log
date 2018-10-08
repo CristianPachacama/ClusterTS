@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.28)  8 OCT 2018 00:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.28)  8 OCT 2018 01:35
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
@@ -1023,7 +1023,35 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 1.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 1.
-)
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 8.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 8.
+[3
+
+
+
+])
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 90.
 Package babel Info: Redefining spanish shorthand >>
@@ -1048,11 +1076,32 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 90.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 90.
- [3
-
-
-
-]
+ [4]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 90.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 90.
+ [5]
 \openout2 = `Capitulos/conclusiones.aux'.
 
 
@@ -1084,57 +1133,109 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 97.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 97.
- [4
+ [6
 
 
 
 
 
-]
+] (Tesis.bbl
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 101.
+(babel)             in language append on input line 49.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 101.
+(babel)             in language append on input line 49.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 101.
+(babel)             in language append on input line 49.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 101.
+(babel)             in language append on input line 49.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 101.
+(babel)             in language append on input line 49.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 101.
+(babel)             in language append on input line 49.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 49.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 49.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 49.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 49.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 49.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 49.
+ [7
 
-No file Tesis.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
-(Tesis.aux
+
+])
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 107.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 107.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 107.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 107.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 107.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 107.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 110.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 110.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+ (Tesis.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- (Capitulos/0Resumen.aux) (Capitulos/1Introduccion.aux)
+
+(Capitulos/0Resumen.aux) (Capitulos/1Introduccion.aux)
 (Capitulos/2MarcoTeorico.aux) (Capitulos/3Metodologia.aux)
 (Capitulos/conclusiones.aux) (Apendice/1Apend.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `Tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0F2999BEA3C4F2B6F4DB905BD5C5B1A2;242.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
+(rerunfilecheck)             Checksum: 2AF7ADAA7103249F9EC91ABD1C0D67B0;295.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 10119 strings out of 492973
- 149919 string characters out of 3135935
- 254172 words of memory out of 3000000
- 13743 multiletter control sequences out of 15000+200000
+ 10199 strings out of 492973
+ 151405 string characters out of 3135935
+ 256937 words of memory out of 3000000
+ 13797 multiletter control sequences out of 15000+200000
  28767 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,5n,45p,366b,380s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,5n,45p,1104b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Asus\AppD
 ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Tesis.pdf (14 pages, 81059 bytes).
+Output written on Tesis.pdf (18 pages, 104013 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

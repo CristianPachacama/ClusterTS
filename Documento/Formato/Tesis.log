@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.28)  7 OCT 2018 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.28)  8 OCT 2018 01:00
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
@@ -423,7 +423,9 @@ Package: cite 2015/02/27  v 5.5
 (Tesis.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
- (Capitulos/Resumen.aux) (Capitulos/CapituloUNO.aux)
+
+No file Capitulos/Resumen.aux.
+No file Capitulos/CapituloUNO.aux.
 (Apendice/conclusiones.aux) (Apendice/Ape0.aux))
 \openout1 = `Tesis.aux'.
 
@@ -871,45 +873,45 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 3.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 5.
+(babel)             in language append on input line 8.
  [10
 
 
 ]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 7.
+(babel)             in language append on input line 10.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 7.
+(babel)             in language append on input line 10.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 7.
+(babel)             in language append on input line 10.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 7.
+(babel)             in language append on input line 10.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 7.
+(babel)             in language append on input line 10.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 7.
+(babel)             in language append on input line 10.
 )
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 51.
@@ -1198,22 +1200,26 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `Tesis.out' has not changed.
 (rerunfilecheck)             Checksum: 0550661D7D6516A6BD9AF1DC8F40E63B;373.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
  ) 
 Here is how much of TeX's memory you used:
- 10181 strings out of 492973
- 150026 string characters out of 3135935
- 256017 words of memory out of 3000000
+ 10178 strings out of 492973
+ 149675 string characters out of 3135935
+ 255528 words of memory out of 3000000
  13787 multiletter control sequences out of 15000+200000
- 30216 words of font info for 60 fonts, out of 3000000 for 9000
+ 31822 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,6n,45p,310b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,6n,45p,381b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Asus\AppD
 ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Tesis.pdf (17 pages, 97363 bytes).
+Output written on Tesis.pdf (17 pages, 98276 bytes).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
  48 named destinations out of 1000 (max. 500000)
