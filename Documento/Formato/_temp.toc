@@ -1,0 +1,61 @@
+\select@language {spanish}
+\contentsline {chapter}{Resumen}{\es@scroman {xi}}{chapter*.3}
+\contentsline {chapter}{Abstract}{\es@scroman {xii}}{chapter*.4}
+\contentsline {chapter}{\numberline {1}El fen\'omeno f\IeC {\'\i }sico}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Movimiento Oscilatorio}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Oscilador lineal}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Oscilador de Duffing}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Oscilador de van der Pol}{3}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}El fen\'omeno f\IeC {\'\i }sico}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Oscilador Aleatorio}{4}{section.1.3}
+\contentsline {chapter}{\numberline {2}MOVIMIENTO BROWNIANO}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Procesos Estoc\'asticos}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Definici\'on y ejemplos}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Tipos de Procesos Estoc\'asticos}{9}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Martingalas}{10}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Filtraci\'on, proceso adaptado y tiempo de parada}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Definici\'on y propiedades}{11}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Desigualdades para martingalas}{13}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}movimiento Browniano o Proceso de Wiener}{16}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Desarrollo hist\'orico}{16}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Definici\'on y propiedades de distribuci\'on}{17}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}El movimiento Browniano como una martingala}{22}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Continuidad y diferenciabilidad}{25}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Procesos continuos obtenidos a trav\'es del movimiento Browniano}{28}{subsection.2.3.5}
+\contentsline {chapter}{\numberline {3}C\'alculo Estoc\'astico}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Integraci\'on estoc\'astica}{33}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Preliminares}{33}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Caso general}{35}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Construcci\'on de la integral de It\^o}{36}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}F\'ormula de It\^o}{38}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Caso unidimensional}{39}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Caso $d-$dimensional}{40}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Caso $d\times d'$ dimensional}{42}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Representaci\'on de martingalas}{42}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Ecuaci\'on diferencial estoc\'astica}{42}{section.3.3}
+\contentsline {section}{\numberline {3.4}Existencia y unicidad}{42}{section.3.4}
+\contentsline {section}{\numberline {3.5}Procesos de difusi\'on}{43}{section.3.5}
+\contentsline {section}{\numberline {3.6}M\'etodos num\'ericos de resoluci\'on}{43}{section.3.6}
+\contentsline {chapter}{\numberline {4}F\'ormula de It\^o en la resoluci\'on de un proceso de difusi\'on}{44}{chapter.4}
+\contentsline {section}{\numberline {4.1}Caso lineal}{44}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}M\'etodo directo}{44}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Estado Aumentado}{44}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Caso no lineal}{44}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Momentos}{44}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Funci\'on caracter\IeC {\'\i }stica}{44}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Ecuaci\'on de Fockker-Planck y de Kolmogorov}{45}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}M\'etodos num\'ericos}{45}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Aplicaciones}{45}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Aplicaci\'on 1}{45}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Aplicaci\'on 2}{45}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Aplicaci\'on 3}{45}{subsection.4.3.3}
+\contentsline {chapter}{Conclusiones}{46}{chapter*.21}
+\contentsline {chapter}{Recomendaciones}{47}{chapter*.22}
+\contentsline {chapter}{\numberline {A}Conceptos y definiciones probabil\IeC {\'\i }sticos}{48}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Espacio probabil\IeC {\'\i }stico}{48}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Variable aleatoria}{49}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Probabilidad condicional e independencia}{51}{section.Alph1.3}
+\contentsline {subsection}{\numberline {A.3.1}Independencia}{51}{subsection.Alph1.3.1}
+\contentsline {section}{\numberline {A.4}Esperanza condicional}{52}{section.Alph1.4}
+\contentsline {chapter}{\numberline {B}Tablas}{53}{appendix.Alph2}
+\contentsline {chapter}{\numberline {C}Algoritmos}{56}{appendix.Alph3}

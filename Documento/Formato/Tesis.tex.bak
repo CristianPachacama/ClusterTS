@@ -1,0 +1,68 @@
+\documentclass[12pt,oneside]{book}
+
+\usepackage{tesis-epn}
+
+%\usepackage{showlabels}
+
+\usepackage{mathpazo}
+\usepackage{enumitem}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\input{comandos.tex}
+
+
+\titulo{Análisis Comparativo de los Métodos para calcular la Reserva de Riesgo en Curso y la Reserva de Siniestros Ocurridos y no Reportados del Sistema Asegurador Ecuatoriano}
+%esta bien escribir esas palabras con mayúsculas
+\carrera{Ingeniería Matemática}
+\autor{Karen Priscilla Calva Yaguana}
+\correoautor{\url{karen.calva@epn.edu.ec}}
+\director{Dr. Cadena Cepeda Meitner Nassary}
+\correodirector{\url{meitner.cadena@gmail.com}}
+\codirector{Dra. Uquillas Andrade Adriana}
+\correocodirector{adriana.uquillas@epn.edu.ec}
+\fecha{Mayo 2017}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\frontmatter
+\portadilla
+\declaracion
+\certificacion
+
+\begin{agradecimiento}
+AAA
+\end{agradecimiento}
+
+\begin{dedicatoria}
+AAA
+\end{dedicatoria}
+
+
+\tableofcontents
+\listoffigures
+\listoftables
+\include{Capitulos/Resumen}
+
+
+\mainmatter
+\addtolength{\abovedisplayskip}{-1mm}
+\addtolength{\belowdisplayskip}{-1mm}
+\include{Capitulos/CapituloUNO}
+\include{Apendice/conclusiones}
+
+\appendix
+\include{Apendice/Ape0}
+
+\nocite{*}
+\bibliographystyle{plainE}
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{bibTesis}
+
+\end{document} 

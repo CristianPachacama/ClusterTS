@@ -1,0 +1,32 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Niveles medios diarios del agua registrados durante el 2012.\relax }}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Niveles medios diarios del agua registrados durante el 2013.\relax }}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Mapeo de un proceso estoc\'astico a tiempo continuo.\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Un proceso estoc\'astico a tiempo continuo 5 de sus trayectorias\relax }}{9}{figure.caption.8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Trayectoria de una martingala a partir de una caminata aleatoria con valor inicial $X_{0}=10$ y probabilidad $p=0.5$ para $N=100$ pasos.\relax }}{14}{figure.caption.9}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Trayectoria de una supermatingala a partir de una caminata aleatoria con valor inicial $X_{0}=10$ y probabilidad $p=0.3$ para $N=100$ pasos.\relax }}{14}{figure.caption.10}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Trayectoria de una submartingala a partir de una caminata aleatoria con valor inicial $X_{0}=10$ y probabilidad $p=0.8$ para $N=100$ pasos.\relax }}{15}{figure.caption.11}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Una trayectoria de un movimiento Browniano unidimensional.\relax }}{19}{figure.caption.12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces 10 trayectorias de un movimiento Browniano unidimensional\relax }}{19}{figure.caption.13}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Movimiento Browniano 2-dimensional.\relax }}{20}{figure.caption.14}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Movimiento Browniano 3-dimensional.\relax }}{21}{figure.caption.15}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Probabilidad de que el $\qopname \relax m{sup}_{t}{e^{B_{t}}}$ con $t\in [0,10]$ exceda a $x\in [2,20]$ y su cota superior $\frac {E[X(\tau )^{+}]}{\qopname \relax o{ln}{x}}$.\relax }}{25}{figure.caption.16}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Una trayectoria de un Puente Browniano, que inicia y termina en cero, es decir $X_{0}=X_{1}=0$.\relax }}{29}{figure.caption.17}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Una trayectoria de movimiento Browniano con deriva con $\mu = 0.5$ y $\sigma = 5$.\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Una trayectoria de movimiento Browniano con deriva con $\mu = 5$ y $\sigma = 0.5$.\relax }}{31}{figure.caption.19}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Una trayectoria de un movimiento Browniano geom\'etrico con $\alpha = 1$.\relax }}{32}{figure.caption.20}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Valor\relax }}{56}{figure.caption.25}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Martingala\relax }}{57}{figure.caption.26}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Movimiento Browniano\relax }}{57}{figure.caption.27}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Para la submartingala $B(t)^2$\relax }}{58}{figure.caption.28}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Puente Browniano\relax }}{58}{figure.caption.29}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Ruido Blanco\relax }}{59}{figure.caption.30}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Variaci\'on cuadr\'atica\relax }}{59}{figure.caption.31}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Variaci\'on acotada\relax }}{60}{figure.caption.32}

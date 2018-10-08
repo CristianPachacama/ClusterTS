@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+
+\bibitem{Chaos1996}
+K.~Alligood, T.~Sauer, y J.~Yorke.
+\newblock {\em CHAOS: An Introduction to Dynamical Systems}.
+\newblock Springer-Verlag New York, New York, 1996.
+
+\bibitem{OU2008}
+E.~Bibbona, G.~Panfilo, y P.~Tavella.
+\newblock {\em The Ornstein-Uhlenbeck process as a model of a low-pass filtered
+  white noise}.
+\newblock U.S.A., 2008.
+
+\bibitem{Chung1990}
+K.~Chung y R.~Williams.
+\newblock {\em {Introduction to Stochastic Integrtion}}.
+\newblock Birkhäuser, New York, 1990.
+
+\bibitem{Klebaner2005}
+F.~Klebaner.
+\newblock {\em {Introduction to Stochastic Calculus with Applications}}.
+\newblock Imperial College Press, Londres, 2005.
+
+\bibitem{Kloeden1992}
+P.~Kloeden y E.~Platen.
+\newblock {\em {Numerical Solution to Stochastic Differential Equations}}.
+\newblock Springer-Verlag, Berlin, 1992.
+
+\bibitem{Lakshmanan2003}
+M.~Lakshmanan y S.~Rajasekar.
+\newblock {\em Nonlinear Dynamics}.
+\newblock Springer-Verlag Berlin Heidelberg, Berlin, 2003.
+
+\bibitem{Lemons2002}
+D.~Lemons.
+\newblock {\em {An Introduction to Stochastic Processes in Physics}}.
+\newblock The Johns Hopkins University Press, Baltimore, 2002.
+
+\bibitem{Mircea2002}
+G.~Mircea.
+\newblock {\em {Stochastic Calculus: Applications in Science and Engineering}}.
+\newblock Birkhäuser, Boston, 2002.
+
+\bibitem{Moters2000}
+P.~Möters y Y.~Peres.
+\newblock {\em {Brownian Motion}}.
+\newblock Cambridge University Press, 2008.
+
+\bibitem{Nelson2001}
+E.~Nelson.
+\newblock {\em {Dynamical Theories of Brownian Motion}}.
+\newblock Pricenton University Press, U.S.A., 2001.
+
+\bibitem{Nualart2000}
+D.~Nualart.
+\newblock {\em {Cálculo Estocástico}}.
+\newblock Technical report, Universidad de Barcelona.
+
+\bibitem{Protter2004}
+P.~Protter.
+\newblock {\em {Stochastic Integrtion and Differential Equations}}.
+\newblock Springer-Verlag, Berlin, 2004.
+
+\bibitem{Rincon2012}
+L.~Rincón.
+\newblock {\em {Introducción a los Procesos Estocásticos}}.
+\newblock Technical report, Facultad de Ciencias UNAM, México DF, 2012.
+
+\bibitem{Ross2013}
+S.~Ross.
+\newblock {\em {Simulation}}.
+\newblock Academic Press, University of Southern California, 2013.
+
+\bibitem{Rubstein1981}
+R.~Rubstein.
+\newblock {\em {Simulation and the Monte Carlo method}}.
+\newblock John Wiley and Sons, Inc., 1981.
+
+\bibitem{Steele2001}
+J.~Steele.
+\newblock {\em {Stochastic Calculus and Financial Aplications}}.
+\newblock Springer, New York, 2001.
+
+\bibitem{Suarez2012}
+M.~Suárez y F.~Tapia.
+\newblock {\em {Interaprendizaje de Estadística Básica}}.
+\newblock Universidad Técnica del Norte, Ibarra, 2012.
+
+\bibitem{Wagg2010}
+D.~Wagg y S.~Neild.
+\newblock {\em Nonlinear Vibration with Control}.
+\newblock Springer, Bristol, 2010.
+
+\end{thebibliography}

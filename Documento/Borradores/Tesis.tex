@@ -1,0 +1,104 @@
+\documentclass[12pt,oneside]{book}
+
+\usepackage{tesis-epn}
+
+%\usepackage{showlabels}
+
+\usepackage{mathpazo}
+\usepackage{enumitem}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\input{comandos.tex}
+
+
+\titulo{Análisis Clúster para series de tiempo estacionales y modelización de caudales de ríos del Brasil.}
+%esta bien escribir esas palabras con mayúsculas
+\carrera{Ingeniería Matemática}
+\autor{Cristian David Pachacama Simbaña}
+\correoautor{\url{cristian.pachacama01@epn.edu.ec}}
+\director{Dra. Uquillas Andrade Adriana}
+\correodirector{\url{adriana.uquillas@epn.edu.ec}}
+
+\fecha{Octubre 2018}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\frontmatter
+\portadilla
+\declaracion
+\certificacion
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%     AGRADECIMIENTOS    %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{agradecimiento}
+
+A mi familia, ya que su cariño y apoyo me llevaron a donde ahora estoy.  
+A mis mejores amigos Miguel, Rubi, Luis y Pablo, por brindarme su amistad y tan gratos momentos.
+
+A mi tutora Adriana por ser una guía y apoyarme desde el primer momento a alcanzar esta meta, gracias por depositar su confianza en mi.
+A los profesores Erwin Jimenez, y de manera especial a Juan Carlos Trujillo quienes hicieron nacer en mi la pasión por la Matemática, pasión que espero inspirar a más generaciones de estudiantes. 
+
+Finalmente, a grandes matemáticos de la historia como George Cantor,  Simeón Poisson , Abraham Wald, y Karl Pearson, cuyo trabajo me inspiró a profundizar en el conocimiento de esta bella ciencia.
+
+
+\end{agradecimiento}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%       DEDICATORIA      %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{dedicatoria}
+A mis padres Magdalena y Lucio, por su incondicional amor, sus sabios consejos y su paciencia, siempre lo tendré presente. A Isabel por su apoyo incondicional, y por aparecer en el momento exacto en mi vida para llenarla de felicidad. A Miguel, Rubi, Pablo y Luis por brindarme su sincera amistad.
+
+\end{dedicatoria}
+
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%         ABSTRACT       %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Capitulos/0Resumen}
+
+
+\mainmatter
+\addtolength{\abovedisplayskip}{-1mm}
+\addtolength{\belowdisplayskip}{-1mm}
+%\include{Capitulos/CapituloUNO}
+
+
+
+\include{Capitulos/1Introduccion}
+
+
+
+\include{Capitulos/2MarcoTeorico}
+
+
+
+\include{Capitulos/3Metodologia}
+
+
+
+\include{Capitulos/conclusiones}
+
+\appendix
+\include{Apendice/1Apend}
+
+\nocite{*}
+\bibliographystyle{plainE}
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{bibTesis}
+
+\end{document} 

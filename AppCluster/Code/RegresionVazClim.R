@@ -3,6 +3,7 @@ library(xts)
 library(TSA)
 library(forecast)
 library(ggplot2)
+library(TSstudio)
 
 library(lmtest)
 
@@ -85,7 +86,7 @@ graf_series = function(BDDRegresion,ind = NULL,fecha = fecha0r){
     aux = BDDRegresion[,ind]
   }
   
-  aux = ts(aux,start = fecha[c(2,1)] , frequency = 12)
+  aux = ts(aux,start = fecha , frequency = 12)
   
   graf=dygraph(data = aux, main = "Datos Estacion Vazoes vs Clima")%>%
     # dyAxis("x", label=names(metric)) %>%
@@ -132,7 +133,7 @@ graf_series2 = function(BDDRegresion,ind = NULL,fecha = fecha0r){
     aux = BDDRegresion[,c(2,ind)]
   }
   
-  aux = ts(aux,start = fecha[c(2,1)] , frequency = 12)
+  aux = ts(aux,start = fecha , frequency = 12)
   
   graf=dygraph(data = aux, main = "Datos Estacion Vazoes vs Clima")%>%
     dyHighlight(highlightSeriesBackgroundAlpha = 0.3) %>% 
@@ -151,21 +152,38 @@ indTrain = -c((dim(BDDRegMacro)[1]-12):(dim(BDDRegMacro)[1]))
 BDDtrain = BDDRegMacro[indTrain ,]
 BDDtest = BDDRegMacro[-indTrain ,]
 
-VarXsMacro = names(BDDRegMacro)[c(4,7:12)]
+VarXsMacro = names(BDDRegMacro)[c(4,13:21)]
 
+#Modelo usando funcion Arima
 ModLogArimaMacro = Arima(y= VazoePCAts[indTrain],
-                    xreg = BDDtrain[,c(VarXsMacro)],
-                    order = c(p=4,d=0,q=2),
-                    seasonal = c(P=1,D=1,Q=0))
-
-
-
+                    order = c(p=4,d=0,q=1),
+                    seasonal = c(P=1,D=1,Q=0),
+                    xreg = BDDtrain[,c(VarXsMacro)]
+                    # include.constant = T,
+                    # include.mean = F
+                    )
 coeftest(ModLogArimaMacro)
 checkresiduals(ModLogArimaMacro)
-
 prediccion = forecast(ModLogArimaMacro,xreg = BDDtest[,c(VarXsMacro)])
+accuracy(prediccion)
+
+
+
+#Variante del modelo (arima) Admite Estacionalidad
+ModLogArimaMacro = TSA::arima(x= log(VazoePCAts[indTrain]),
+                         order = c(p=4,d=0,q=1),
+                         seasonal = list(order= c(P=1,D=1,Q=0),period=12),
+                         xreg = BDDtrain[,c(VarXsMacro)],
+                         include.mean = T
+                         )
+coeftest(ModLogArimaMacro)
+checkresiduals(ModLogArimaMacro)
+prediccion = forecast(ModLogArimaMacro,xreg = BDDtest[,c(VarXsMacro)])
+accuracy(prediccion)
+
 #Grafico de Predicciones
 test_forecast(actual = VazoePCAts, forecast.obj = prediccion, test = BDDtest[,c("VazoePCA")])
+test_forecast(actual = log(VazoePCAts), forecast.obj = prediccion, test = log(BDDtest[,c("VazoePCA")]))
 
 
 # ts_seasonal(BDDtsc[,3],type="all")

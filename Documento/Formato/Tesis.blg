@@ -1,0 +1,20 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Tesis.aux
+A level-1 auxiliary file: Capitulos/Resumen.aux
+A level-1 auxiliary file: Capitulos/CapituloUNO.aux
+A level-1 auxiliary file: Apendice/conclusiones.aux
+A level-1 auxiliary file: Apendice/Ape0.aux
+The style file: plainE.bst
+Database file #1: bibTesis.bib
+I was expecting a `,' or a `}'---line 88 of file bibTesis.bib
+ :   
+ :   webpage = {http://webs.um.es/joseori/documentos/docencia/ce1.pdf},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 106 of file bibTesis.bib
+ :   
+ :   webpage = {http://lya.fciencias.unam.mx/lars/Publicaciones/procesos2012.pdf},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty publisher in OU2008
+Warning--empty year in Nualart2000
+(There were 2 error messages)
