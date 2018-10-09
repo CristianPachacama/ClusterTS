@@ -3,6 +3,7 @@ library(xts)
 library(TSA)
 library(forecast)
 library(ggplot2)
+library(dygraphs)
 library(TSstudio)
 
 library(lmtest)
@@ -149,6 +150,8 @@ graf_series2(BDDRegMacro, ind= c(37:40) ,fecha = fecha0r)
 
 #SARIMAX con MACRO CLima --------------------------------------
 indTrain = -c((dim(BDDRegMacro)[1]-12):(dim(BDDRegMacro)[1]))
+BDDRegMacroTS = ts(BDDRegMacro,start=fecha0r,frequency = 12)
+
 BDDtrain = BDDRegMacro[indTrain ,]
 BDDtest = BDDRegMacro[-indTrain ,]
 
@@ -165,8 +168,8 @@ ModLogArimaMacro = Arima(y= VazoePCAts[indTrain],
 coeftest(ModLogArimaMacro)
 checkresiduals(ModLogArimaMacro)
 prediccion = forecast(ModLogArimaMacro,xreg = BDDtest[,c(VarXsMacro)])
-accuracy(prediccion)
-
+# accuracy(prediccion)
+autoplot(prediccion)
 
 
 #Variante del modelo (arima) Admite Estacionalidad
@@ -179,7 +182,8 @@ ModLogArimaMacro = TSA::arima(x= log(VazoePCAts[indTrain]),
 coeftest(ModLogArimaMacro)
 checkresiduals(ModLogArimaMacro)
 prediccion = forecast(ModLogArimaMacro,xreg = BDDtest[,c(VarXsMacro)])
-accuracy(prediccion)
+# accuracy(prediccion)
+autoplot(prediccion)
 
 #Grafico de Predicciones
 test_forecast(actual = VazoePCAts, forecast.obj = prediccion, test = BDDtest[,c("VazoePCA")])
@@ -189,5 +193,74 @@ test_forecast(actual = log(VazoePCAts), forecast.obj = prediccion, test = log(BD
 # ts_seasonal(BDDtsc[,3],type="all")
 # ts_lags(BDDtsc[,3], lags = c(12, 24, 36, 48))
 # ts_heatmap(BDDtsc[,3])
+
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# Modelo Primero (Sin considerar Data Particionada) --------------------------
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+VarXsMacro = names(BDDRegMacro)[c(4,5,6,8,12,13,14)]
+
+#Modelo usando funcion Arima ------------------------------------
+BDDRegMacroTS = ts(BDDRegMacro,start = fecha0r , frequency = 12)
+modelo0 = Arima(y= log(VazoePCAts),
+                         order = c(p=6,d=0,q=4),
+                         seasonal = c(P=1,D=1,Q=0),
+                         xreg = log(BDDRegMacroTS[,c(VarXsMacro)])
+                         # include.constant = T,
+                         # include.mean = F
+)
+
+summary(modelo0)
+coeftest(modelo0)
+checkresiduals(modelo0)
+prediccion = forecast(modelo0,xreg = log(BDDRegMacroTS[150:160,c(VarXsMacro)]))
+autoplot(prediccion)
+# accuracy(prediccion)
+
+
+
+
+#Modelado con funcion "arima" ---------------------------------
+BDDRegMacroTS = ts(BDDRegMacro,start = fecha0r , frequency = 12)
+modelo1 = arima(x= log(VazoePCAts),
+                order = c(p=6,d=0,q=4),
+                seasonal = c(P=1,D=1,Q=0),
+                xreg = log(BDDRegMacroTS[,c(VarXsMacro)])
+)
+
+summary(modelo1)
+coeftest(modelo1)
+checkresiduals(modelo1)
+prediccion = forecast(modelo1,xreg = log(BDDRegMacroTS[,c(VarXsMacro)]))
+prediccion = predict(modelo1,newxreg = log(BDDRegMacroTS[,c(VarXsMacro)]))
+
+autoplot(prediccion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
